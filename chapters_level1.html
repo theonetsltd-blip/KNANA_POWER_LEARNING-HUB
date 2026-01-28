@@ -2,37 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5, user-scalable=yes">
+    <meta name="description" content="Level 1 Chapters - Foundation Computer Skills Training">
+    <meta name="theme-color" content="#1E40AF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Level 1 Chapters - KNANA POWER LEARNING HUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {touch-action: manipulation;}
+        body {overflow-x: hidden;}
+        html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+        img {max-width: 100%; height: auto; display: block;}
+        a, button {-webkit-touch-callout: none; -webkit-user-select: none;}
+        @supports(padding: max(0px)) {
+            body, .navbar, footer {
+                padding-left: max(1rem, env(safe-area-inset-left));
+                padding-right: max(1rem, env(safe-area-inset-right));
+            }
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index_en.html" style="font-size: 1.4rem;">
-                🖥️ KNANA POWER LEARNING HUB
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 0.75rem 0;">
+        <div class="container" style="padding: 0 1rem;">
+            <a class="navbar-brand fw-bold" href="index_en.html" style="font-size: clamp(1rem, 3vw, 1.4rem);">
+                🖥️ KNANA
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Chapters</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index_en.html#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="font-size: clamp(0.85rem, 2vw, 1rem);">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" style="font-size: clamp(0.85rem, 2vw, 1rem);">Chapters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index_en.html#resources" style="font-size: clamp(0.85rem, 2vw, 1rem);">Resources</a></li>
                 </ul>
-                <div class="ms-auto" style="margin-left: 2rem; display: flex; gap: 1rem; align-items: center;">
-                    <button id="printBtn" class="btn btn-light btn-sm" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;" title="Print this page">
+                <div class="ms-auto d-flex gap-2 align-items-center flex-wrap" style="margin-left: 1rem;">
+                    <button id="printBtn" class="btn btn-light btn-sm" style="font-size: clamp(0.75rem, 2vw, 0.85rem); padding: 0.4rem 0.8rem;" title="Print this page">
                         🖨️ Print
                     </button>
-                    <button id="pdfBtn" class="btn btn-light btn-sm" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;" title="Download as PDF">
+                    <button id="pdfBtn" class="btn btn-light btn-sm" style="font-size: clamp(0.75rem, 2vw, 0.85rem); padding: 0.4rem 0.8rem;" title="Download as PDF">
                         📥 PDF
                     </button>
-                    <a href="index_en.html" style="color: white; text-decoration: none; font-weight: 600;">← Back Home</a>
+                    <a href="index_en.html" style="color: white; text-decoration: none; font-weight: 600; font-size: clamp(0.75rem, 2vw, 0.9rem);">← Home</a>
                 </div>
             </div>
         </div>
@@ -521,7 +538,7 @@
                 <div class="col-md-4 mb-3">
                     <h5 style="font-weight: 700; margin-bottom: 1rem;">Quick Links</h5>
                     <ul style="list-style: none; padding: 0;">
-                        <li><a href="level1_chapters.html" style="color: #93C5FD; text-decoration: none;">Level 1 Chapters</a></li>
+                        <li><a href="chapters_level1.html" style="color: #93C5FD; text-decoration: none;">Level 1 Chapters</a></li>
                         <li><a href="chapters_level2.html" style="color: #93C5FD; text-decoration: none;">Level 2 Chapters</a></li>
                         <li><a href="index_en.html#about" style="color: #93C5FD; text-decoration: none;">About</a></li>
                     </ul>
@@ -574,3 +591,4 @@
     </script>
 </body>
 </html>
+

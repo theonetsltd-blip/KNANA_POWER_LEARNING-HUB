@@ -2,12 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5, user-scalable=yes">
+    <meta name="description" content="About KNANA POWER LEARNING HUB - Vocational Computer Training">
+    <meta name="theme-color" content="#1E40AF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>About Us - KNANA POWER LEARNING HUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        * {touch-action: manipulation;}
+        body {overflow-x: hidden;}
+        html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+        img {max-width: 100%; height: auto; display: block;}
+        a, button {-webkit-touch-callout: none; -webkit-user-select: none;}
+        @supports(padding: max(0px)) {
+            body, .navbar, footer {
+                padding-left: max(1rem, env(safe-area-inset-left));
+                padding-right: max(1rem, env(safe-area-inset-right));
+            }
+        }
         .section-title {
             font-size: 2rem;
             font-weight: 700;
@@ -86,7 +101,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index_en.html" style="font-size: 1.4rem;">
+            <a class="navbar-brand fw-bold" href="index_en.html" style="font-size: clamp(0.85rem, 2vw, 1.4rem);">
                 🖥️ KNANA POWER LEARNING HUB
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -122,7 +137,7 @@
                 <a href="index_en.html" class="btn" style="background-color: #FFD700; color: #0F172A; padding: 10px 20px; font-weight: 700; border: none; border-radius: 8px; font-size: 0.9rem; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3); transition: all 0.3s; cursor: pointer; text-decoration: none;">
                     🏠 Go to Home
                 </a>
-                <a href="level1_chapters.html" class="btn" style="background-color: transparent; color: white; border: 2px solid white; padding: 8px 18px; font-weight: 600; border-radius: 8px; font-size: 0.9rem; transition: all 0.3s; text-decoration: none;">
+                <a href="chapters_level1.html" class="btn" style="background-color: transparent; color: white; border: 2px solid white; padding: 8px 18px; font-weight: 600; border-radius: 8px; font-size: 0.9rem; transition: all 0.3s; text-decoration: none;">
                     🚀 Start Learning
                 </a>
             </div>
@@ -381,3 +396,4 @@
 
 </body>
 </html>
+
