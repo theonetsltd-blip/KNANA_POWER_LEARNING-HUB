@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Operating System Basics - Jifunze Computer KWA URAHISI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 1rem 0;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 1.5rem; font-weight: 700; color: white;">
+                Jifunze Computer KWA URAHISI
+            </div>
+            <div>
+                <a href="../index_en.html" style="color: white; text-decoration: none; margin: 0 1.5rem; font-weight: 600;">Home</a>
+                <button id="languageToggle" style="background: #FFD700; color: #1E40AF; border: none; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 700; cursor: pointer;">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CHAPTER HEADER -->
+    <header style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 50%, #10B981 100%); color: white; padding: 3rem 0; margin-bottom: 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <span style="font-size: 0.9rem; opacity: 0.9;">CHAPTER 3</span>
+            <h1 data-lang-en="Operating System Basics" data-lang-sw="Msingi wa Mfumo wa Uendaji">Operating System Basics</h1>
+            <p data-lang-en="Learn what an operating system does and how to use it" data-lang-sw="Jifunze kile mfumo wa uendaji wanafanya na jinsi ya kumtumia">Learn what an operating system does and how to use it</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.3);">
+                <div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">Duration</div>
+                    <div style="font-size: 1.3rem; font-weight: 700;">6 hours</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">Level</div>
+                    <div style="font-size: 1.3rem; font-weight: 700;">NQF 2-3</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">Credits</div>
+                    <div style="font-size: 1.3rem; font-weight: 700;">2 units</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; margin-bottom: 3rem;">
+
+        <!-- LEARNING OUTCOMES -->
+        <section style="background: #E3F2FD; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border-left: 5px solid #1E40AF;">
+            <h2 data-lang-en="Learning Outcomes" data-lang-sw="Matokeo ya Kujifunza">Learning Outcomes</h2>
+            <p data-lang-en="After completing this chapter, you will be able to:" data-lang-sw="Baada ya kumaliza sura hii, utakuwa na uwezo wa:">After completing this chapter, you will be able to:</p>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Explain what an operating system is" data-lang-sw="Kueleza ni nini mfumo wa uendaji">Explain what an operating system is</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Identify common operating systems (Windows, Linux, macOS)" data-lang-sw="Kutambua mifumo ya kawaida ya uendaji (Windows, Linux, macOS)">Identify common operating systems (Windows, Linux, macOS)</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Navigate the Windows desktop and menu system" data-lang-sw="Kusogeza kwenye njano ya Windows na mfumo wa menyu">Navigate the Windows desktop and menu system</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Understand the purpose of the taskbar and start menu" data-lang-sw="Kuelewa kusudi la taskbar na menyu ya kuanza">Understand the purpose of the taskbar and start menu</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Manage windows and open/close programs" data-lang-sw="Kudhibiti Windows na kufungua/kuzima programu">Manage windows and open/close programs</span></li>
+            </ul>
+        </section>
+
+        <!-- KEY CONCEPTS -->
+        <section style="margin-bottom: 3rem;">
+            <h2 data-lang-en="Key Concepts & Glossary" data-lang-sw="Dhana Muhimu na Kamusi">Key Concepts & Glossary</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Operating System (OS)</h4>
+                    <p data-lang-en="The software that manages computer hardware and lets users run applications" data-lang-sw="Programu inayosimamia vifaa vya elektroniki na kuruhusu watumiaji kuendeza programu">The software that manages computer hardware and lets users run applications</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Desktop</h4>
+                    <p data-lang-en="The main screen you see when the OS starts - shows icons, taskbar, and wallpaper" data-lang-sw="Skrini kuu unayoiona wakati OS inapoanza - inaonyesha icons, taskbar, na wallpaper">The main screen you see when the OS starts - shows icons, taskbar, and wallpaper</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Taskbar</h4>
+                    <p data-lang-en="The bar at the bottom (or side) of the screen showing open programs and system info" data-lang-sw="Mwenyezi chini (au upande) wa skrini inayoonyesha programu zinazopokezana na maelezo ya mfumo">The bar at the bottom (or side) of the screen showing open programs and system info</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">File</h4>
+                    <p data-lang-en="A collection of data stored on the computer with a name and specific location" data-lang-sw="Mkusanyo wa data iliyohifadhiwa kwenye kompyuta wenye jina na mahali maalum">A collection of data stored on the computer with a name and specific location</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Folder/Directory</h4>
+                    <p data-lang-en="A container that holds files and other folders to organize data" data-lang-sw="Kile kinachohifadhi faili na folda nyingine kuandaa data">A container that holds files and other folders to organize data</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Icon</h4>
+                    <p data-lang-en="A small picture representing a program, file, or folder" data-lang-sw="Picha ndogo inayowakilisha programu, faili, au folda">A small picture representing a program, file, or folder</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3.1 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="3.1 What is an Operating System?" data-lang-sw="3.1 Ni Nini Mfumo wa Uendaji?">3.1 What is an Operating System?</span>
+            </h2>
+            
+            <p data-lang-en="An Operating System (OS) is a software program that acts as a bridge between you and the computer hardware." data-lang-sw="Mfumo wa Uendaji (OS) ni programu inayofanya kama daraja kati yako na vifaa vya elektroniki vya kompyuta.">An Operating System (OS) is a software program that acts as a bridge between you and the computer hardware.</p>
+
+            <div style="background: #FFF3CD; padding: 1.5rem; border-left: 4px solid #FFD700; margin: 2rem 0;">
+                <h4 style="margin-top: 0; color: #856404;">💡 <span data-lang-en="Think of it this way:" data-lang-sw="Fikiria kwa njia hii:">Think of it this way:</span></h4>
+                <p style="margin: 0; color: #856404;" data-lang-en="The OS is like a manager in a hotel:" data-lang-sw="OS ni kama meneja katika hoteli:">The OS is like a manager in a hotel:</p>
+                <ul style="margin: 0.5rem 0 0 0; color: #856404;">
+                    <li data-lang-en="Guests (users) tell the manager (OS) what they want" data-lang-sw="Wageni (watumiaji) wanamboza meneja (OS) kile wanataka">Guests (users) tell the manager (OS) what they want</li>
+                    <li data-lang-en="The manager coordinates with staff (hardware) to fulfill requests" data-lang-sw="Meneja huandamana na wafanyakazi (vifaa) kutekeleza ombi">The manager coordinates with staff (hardware) to fulfill requests</li>
+                    <li data-lang-en="The manager ensures everyone shares resources fairly" data-lang-sw="Meneja huhakikisha kila mtu anashiriki rasilimali kwa njia ya haki">The manager ensures everyone shares resources fairly</li>
+                </ul>
+            </div>
+
+            <h3 style="color: #1E40AF;" data-lang-en="Main Functions of an OS:" data-lang-sw="Kazi Kuu za OS:">Main Functions of an OS:</h3>
+            <ol>
+                <li><strong data-lang-en="Control Hardware" data-lang-sw="Kudhibiti Vifaa">Control Hardware</strong> - <span data-lang-en="Manage CPU, RAM, storage, printer, screen" data-lang-sw="Kumiliki CPU, RAM, storage, printa, skrini">Manage CPU, RAM, storage, printer, screen</span></li>
+                <li><strong data-lang-en="Run Programs" data-lang-sw="Kuendesha Programu">Run Programs</strong> - <span data-lang-en="Let you open and use applications" data-lang-sw="Kuruhusu ufunge na kumtumia programu">Let you open and use applications</span></li>
+                <li><strong data-lang-en="Manage Files" data-lang-sw="Kumiliki Faili">Manage Files</strong> - <span data-lang-en="Organize and protect your documents and data" data-lang-sw="Kuandaa na kulinda hati zako na data">Organize and protect your documents and data</span></li>
+                <li><strong data-lang-en="Provide User Interface" data-lang-sw="Kutoa Kiolesura cha Mtumiaji">Provide User Interface</strong> - <span data-lang-en="Create the desktop, menus, and icons so you can interact" data-lang-sw="Kuumba njano, menyu, na icons ili uweze kuingiliana">Create the desktop, menus, and icons so you can interact</span></li>
+            </ol>
+        </section>
+
+        <!-- SECTION 3.2 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="3.2 Common Operating Systems" data-lang-sw="3.2 Mifumo ya Kawaida ya Uendaji">3.2 Common Operating Systems</span>
+            </h2>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+                <thead>
+                    <tr style="background: #1E40AF; color: white;">
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;">OS</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Developed By" data-lang-sw="Ilitengenezwa Na">Developed By</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Used On" data-lang-sw="Inatumika Kwenye">Used On</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Cost" data-lang-sw="Gharama">Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Windows</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Microsoft</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Desktop & Laptop" data-lang-sw="Desktop & Laptop">Desktop & Laptop</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Paid" data-lang-sw="Kulipwa">Paid</td>
+                    </tr>
+                    <tr style="background: #F5F5F5;">
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">macOS</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Apple</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Apple Computers (Mac)" data-lang-sw="Kompyuta za Apple (Mac)">Apple Computers (Mac)</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Included with Mac" data-lang-sw="Inajumuishwa na Mac">Included with Mac</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Linux</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Community (Open Source)" data-lang-sw="Jamii (Open Source)">Community (Open Source)</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Desktop, Server, Embedded" data-lang-sw="Desktop, Server, Embedded">Desktop, Server, Embedded</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Free" data-lang-sw="Bure">Free</td>
+                    </tr>
+                    <tr style="background: #F5F5F5;">
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Android</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Google</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Mobile Phones & Tablets" data-lang-sw="Simu za Rununu na Tablets">Mobile Phones & Tablets</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Free" data-lang-sw="Bure">Free</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">iOS</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Apple</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="iPhone, iPad" data-lang-sw="iPhone, iPad">iPhone, iPad</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Included with Apple device" data-lang-sw="Inajumuishwa na kifaa cha Apple">Included with Apple device</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="font-style: italic; color: #666;" data-lang-en="In Tanzania, Windows is the most common OS for schools and businesses" data-lang-sw="Nchini Tanzania, Windows ndio OS ya kawaida kwa shule na biashara">In Tanzania, Windows is the most common OS for schools and businesses</p>
+        </section>
+
+        <!-- SECTION 3.3 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="3.3 Understanding the Windows Desktop" data-lang-sw="3.3 Kuelewa Njano ya Windows">3.3 Understanding the Windows Desktop</span>
+            </h2>
+
+            <p data-lang-en="The Windows desktop is the main screen that appears when you start your computer." data-lang-sw="Njano ya Windows ni skrini kuu inayoonekana wakati unapoingia kwenye kompyuta.">The Windows desktop is the main screen that appears when you start your computer.</p>
+
+            <h3 style="color: #1E40AF; margin-top: 2rem;" data-lang-en="Key Desktop Elements:" data-lang-sw="Vipengee vya Njano vya Muhimu:">Key Desktop Elements:</h3>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #24A148;">🖥️ Desktop Background</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="The main wallpaper/image shown behind all icons" data-lang-sw="Wallpaper/picha kuu iliyoonyeshwa nyuma ya icons zote">The main wallpaper/image shown behind all icons</p>
+                </div>
+
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #24A148;">🔤 Icons</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Small pictures representing programs, files, or folders" data-lang-sw="Picha ndogo zinazowakilisha programu, faili, au folda">Small pictures representing programs, files, or folders</p>
+                </div>
+
+                <div style="background: #FFF3CD; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #856404;">📋 Start Menu</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Bottom left button - opens programs and settings" data-lang-sw="Kifungo kilichokamatika chini kushoto - kinafungua programu na mipango">Bottom left button - opens programs and settings</p>
+                </div>
+
+                <div style="background: #FFF3CD; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #856404;">📊 Taskbar</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Bar at bottom showing clock, open programs, and notifications" data-lang-sw="Mwenyezi chini unaonyesha saa, programu zinazopokezana, na ilani">Bar at bottom showing clock, open programs, and notifications</p>
+                </div>
+
+                <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #1E40AF;">🔌 System Tray</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Bottom right showing date/time, volume, WiFi, and system icons" data-lang-sw="Chini kulia inayoonyesha saa/tarehe, sauti, WiFi, na icons za mfumo">Bottom right showing date/time, volume, WiFi, and system icons</p>
+                </div>
+
+                <div style="background: #FCE4EC; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #C2185B;">🪟 Recycle Bin</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Holds deleted files temporarily before permanent deletion" data-lang-sw="Inabaki faili iliyofutwa kwa muda kabla ya kufutwa kudumu">Holds deleted files temporarily before permanent deletion</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3.4 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="3.4 Using the Start Menu & Taskbar" data-lang-sw="3.4 Kutumia Menyu ya Kuanza na Taskbar">3.4 Using the Start Menu & Taskbar</span>
+            </h2>
+
+            <h3 style="color: #24A148;" data-lang-en="Opening Programs from Start Menu:" data-lang-sw="Kufungua Programu Kutoka Menyu ya Kuanza:">Opening Programs from Start Menu:</h3>
+            <ol>
+                <li data-lang-en="Click the 'Start' button (Windows logo) at bottom left" data-lang-sw="Bofya kifungo cha 'Kuanza' (logo ya Windows) chini kushoto">Click the 'Start' button (Windows logo) at bottom left</li>
+                <li data-lang-en="You'll see categories like All Apps, Recent, Recommended" data-lang-sw="Utakuta aina kama All Apps, Recent, Recommended">You'll see categories like All Apps, Recent, Recommended</li>
+                <li data-lang-en="Find the program you want and click it" data-lang-sw="Tafuta programu unayotaka na ibofye">Find the program you want and click it</li>
+                <li data-lang-en="The program will open in a new window" data-lang-sw="Programu itafungua katika dirisha jipya">The program will open in a new window</li>
+            </ol>
+
+            <h3 style="color: #24A148; margin-top: 2rem;" data-lang-en="Managing Windows:" data-lang-sw="Kumiliki Windows:">Managing Windows:</h3>
+            <div style="margin: 2rem 0;">
+                <p><strong data-lang-en="Minimize:" data-lang-sw="Kupunguza:">Minimize:</strong> <span data-lang-en="Hide window but keep program running (click - button)" data-lang-sw="Kuficha dirisha lakini kuendesha programu (bofya - kifungo)">Hide window but keep program running (click - button)</span></p>
+                <p><strong data-lang-en="Maximize:" data-lang-sw="Kubigiza:">Maximize:</strong> <span data-lang-en="Make window full screen (click [] button)" data-lang-sw="Kumfanya dirisha kuwa skrini kamili (bofya [] kifungo)">Make window full screen (click [] button)</span></p>
+                <p><strong data-lang-en="Restore:" data-lang-sw="Kurejea:">Restore:</strong> <span data-lang-en="Return to smaller window size (click [] button again)" data-lang-sw="Kurudi kwa ukubwa mdogo wa dirisha (bofya [] kifungo tena)">Return to smaller window size (click [] button again)</span></p>
+                <p><strong data-lang-en="Close:" data-lang-sw="Kuzima:">Close:</strong> <span data-lang-en="Shut down the program (click X button)" data-lang-sw="Kumzima programu (bofya X kifungo)">Shut down the program (click X button)</span></p>
+            </div>
+
+            <h3 style="color: #24A148;" data-lang-en="Taskbar Features:" data-lang-sw="Sifa za Taskbar:">Taskbar Features:</h3>
+            <ul>
+                <li data-lang-en="Shows all open programs with thumbnails when you hover" data-lang-sw="Inaonyesha programu zote zinazopokezana na karatasi ndogo wakati unapogeuza">Shows all open programs with thumbnails when you hover</li>
+                <li data-lang-en="Click a program on taskbar to bring its window to front" data-lang-sw="Bofya programu kwenye taskbar kulete dirisha lake mbele">Click a program on taskbar to bring its window to front</li>
+                <li data-lang-en="Right-click taskbar for options like cascade, tile, lock" data-lang-sw="Bofya kulia kwenye taskbar kwa chaguo kama cascade, tile, lock">Right-click taskbar for options like cascade, tile, lock</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 3.5 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="3.5 File Explorer & Basic Navigation" data-lang-sw="3.5 File Explorer & Kunavigeshwa kwa Msingi">3.5 File Explorer & Basic Navigation</span>
+            </h2>
+
+            <p data-lang-en="File Explorer is the program that shows your files and folders. To open it:" data-lang-sw="File Explorer ni programu inayoonyesha faili zako na folda. Kuifungua:">File Explorer is the program that shows your files and folders. To open it:</p>
+            <ul>
+                <li data-lang-en="Click Start menu > type 'File Explorer' > press Enter" data-lang-sw="Bofya menyu ya Kuanza > andika 'File Explorer' > bonyeza Enter">Click Start menu > type 'File Explorer' > press Enter</li>
+                <li data-lang-en="Or press Windows key + E" data-lang-sw="Au bonyeza Windows key + E">Or press Windows key + E</li>
+            </ul>
+
+            <h3 style="color: #1E40AF; margin-top: 2rem;" data-lang-en="Key File Explorer Areas:" data-lang-sw="Maeneo ya Muhimu ya File Explorer:">Key File Explorer Areas:</h3>
+
+            <div style="background: #F5F5F5; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px;">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="margin-top: 0; color: #1E40AF;">🔍 Search Bar (Top)</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Type to find files or folders by name" data-lang-sw="Andika kutafuta faili au folda kwa jina">Type to find files or folders by name</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="margin-top: 0; color: #1E40AF;">📁 Left Panel (Navigation)</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Shows quick access to common folders: This PC, Documents, Downloads, Pictures" data-lang-sw="Inaonyesha werevu kwa folda zinazojulikana: Hii PC, Documents, Downloads, Pictures">Shows quick access to common folders: This PC, Documents, Downloads, Pictures</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="margin-top: 0; color: #1E40AF;">📂 Main Window (Center)</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Shows files and folders in current location. Double-click folder to enter, double-click file to open" data-lang-sw="Inaonyesha faili na folda katika mahali pa sasa. Bofya mara mbili folda kuingia, bofya mara mbili faili kuifungua">Shows files and folders in current location. Double-click folder to enter, double-click file to open</p>
+                </div>
+
+                <div>
+                    <h4 style="margin-top: 0; color: #1E40AF;">📊 Details Pane (Right, optional)</h4>
+                    <p style="margin: 0; font-size: 0.9rem;" data-lang-en="Shows information about selected file: size, date modified, type" data-lang-sw="Inaonyesha maelezo kuhusu faili iliyochaguliwa: ukubwa, tarehe ya mabadiliko, aina">Shows information about selected file: size, date modified, type</p>
+                </div>
+            </div>
+
+            <div class="tip-box" style="background: #E8F5E9; border-left: 4px solid #24A148; padding: 1.5rem; margin: 2rem 0;">
+                <h4 style="margin-top: 0; color: #24A148;">💡 <span data-lang-en="Useful Tips:" data-lang-sw="Vidokezo vya Kutumia:">Useful Tips:</span></h4>
+                <ul style="margin: 0;">
+                    <li data-lang-en="'This PC' shows all drives (C:, D:, etc)" data-lang-sw="'Hii PC' inaonyesha madereva yote (C:, D:, n.k.)">This PC' shows all drives (C:, D:, etc)</li>
+                    <li data-lang-en="Click back arrow ← to go to previous folder" data-lang-sw="Bofya mshale wa nyuma ← kwenda folda iliyotangulia">Click back arrow ← to go to previous folder</li>
+                    <li data-lang-en="Click address bar and type path directly (e.g., C:Documents)" data-lang-sw="Bofya mwenyezi wa anwani na andika njia moja kwa moja (m.m., C:Documents)">Click address bar and type path directly (e.g., C:Documents)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CHAPTER SUMMARY -->
+        <section style="background: #FFF8E1; padding: 2rem; border-radius: 8px; margin: 3rem 0; border-left: 5px solid #FFD700;">
+            <h2 data-lang-en="Chapter Summary" data-lang-sw="Muhtasari wa Sura">Chapter Summary</h2>
+            <ul>
+                <li><strong data-lang-en="Operating System" data-lang-sw="Mfumo wa Uendaji">Operating System</strong> <span data-lang-en="is software that manages hardware and runs programs" data-lang-sw="ni programu inayosimamia vifaa na kuendesha programu">is software that manages hardware and runs programs</span></li>
+                <li><strong data-lang-en="Common OSs" data-lang-sw="OSs ya Kawaida">Common OSs</strong>: <span data-lang-en="Windows (paid), Linux (free), macOS (Apple only)" data-lang-sw="Windows (kulipwa), Linux (bure), macOS (Apple tu)">Windows (paid), Linux (free), macOS (Apple only)</span></li>
+                <li><strong data-lang-en="Desktop" data-lang-sw="Njano">Desktop</strong> <span data-lang-en="is the main screen with icons, taskbar, and system tray" data-lang-sw="ni skrini kuu yenye icons, taskbar, na system tray">is the main screen with icons, taskbar, and system tray</span></li>
+                <li><strong data-lang-en="Start Menu" data-lang-sw="Menyu ya Kuanza">Start Menu</strong> <span data-lang-en="launches programs and opens settings" data-lang-sw="inaendesha programu na inafungua mipango">launches programs and opens settings</span></li>
+                <li><strong data-lang-en="File Explorer" data-lang-sw="File Explorer">File Explorer</strong> <span data-lang-en="is where you view and organize all your files" data-lang-sw="ni mahali unabao ona na kuandaa faili zako zote">is where you view and organize all your files</span></li>
+            </ul>
+        </section>
+
+        <!-- SELF-CHECK QUESTIONS -->
+        <section style="margin: 3rem 0;">
+            <h2 data-lang-en="Self-Check Questions" data-lang-sw="Maswali ya Kujichambua">Self-Check Questions</h2>
+            
+            <div class="question" style="background: #F5F5F5; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+                <h4>1. <span data-lang-en="What is the main job of an Operating System?" data-lang-sw="Ni nini kazi kuu ya Mfumo wa Uendaji?">What is the main job of an Operating System?</span></h4>
+                <textarea style="width: 100%; min-height: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;" placeholder="Your answer..."></textarea>
+                <button onclick="toggleAnswer(this)" style="background: #1E40AF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; margin-top: 1rem;">Show Answer</button>
+                <div class="answer" style="display: none; background: #E8F5E9; padding: 1rem; margin-top: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #24A148; font-weight: 600;">✓ Expected Answer:</p>
+                    <p style="margin: 0.5rem 0 0 0; color: #666;" data-lang-en="The OS manages hardware, runs programs, organizes files, and provides the user interface" data-lang-sw="OS inasimamia vifaa, inaendesha programu, inaandaa faili, na kutoa kiolesura cha mtumiaji">The OS manages hardware, runs programs, organizes files, and provides the user interface</p>
+                </div>
+            </div>
+
+            <div class="question" style="background: #F5F5F5; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+                <h4>2. <span data-lang-en="Name three common operating systems and what devices they run on" data-lang-sw="Taja miundo mitatu ya kawaida ya uendaji na ni vifaa vipi vinavyoendesha">Name three common operating systems and what devices they run on</span></h4>
+                <textarea style="width: 100%; min-height: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;" placeholder="Your answer..."></textarea>
+                <button onclick="toggleAnswer(this)" style="background: #1E40AF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; margin-top: 1rem;">Show Answer</button>
+                <div class="answer" style="display: none; background: #E8F5E9; padding: 1rem; margin-top: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #24A148; font-weight: 600;">✓ Expected Answer:</p>
+                    <p style="margin: 0.5rem 0 0 0; color: #666;" data-lang-en="Windows (desktop/laptop), macOS (Mac computers), Linux (desktop/server/embedded)" data-lang-sw="Windows (desktop/laptop), macOS (kompyuta za Mac), Linux (desktop/server/embedded)">Windows (desktop/laptop), macOS (Mac computers), Linux (desktop/server/embedded)</p>
+                </div>
+            </div>
+
+            <div class="question" style="background: #F5F5F5; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+                <h4>3. <span data-lang-en="True or False: The taskbar shows which programs are currently running" data-lang-sw="Kweli au Uongo: Taskbar inaonyesha programu zipi zinakodumia sasa">True or False: The taskbar shows which programs are currently running</span></h4>
+                <div>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q3"> <span data-lang-en="True" data-lang-sw="Kweli">True</span></label>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q3"> <span data-lang-en="False" data-lang-sw="Uongo">False</span></label>
+                </div>
+                <button onclick="toggleAnswer(this)" style="background: #1E40AF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; margin-top: 1rem;">Show Answer</button>
+                <div class="answer" style="display: none; background: #E8F5E9; padding: 1rem; margin-top: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #24A148; font-weight: 600;">✓ Correct Answer: True</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICAL EXERCISE -->
+        <section style="background: #E3F2FD; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+            <h2 data-lang-en="Practical Exercise 3.1: Explore Your Desktop" data-lang-sw="Zoezi la Vitendo 3.1: Chunguza Njano Yako">Practical Exercise 3.1: Explore Your Desktop</h2>
+            
+            <div style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 5px;">
+                <h4 style="margin-top: 0;">📝 Steps:</h4>
+                <ol>
+                    <li data-lang-en="Boot up the computer and wait for Windows desktop" data-lang-sw="Anzisha kompyuta na subiri njano ya Windows">Boot up the computer and wait for Windows desktop</li>
+                    <li data-lang-en="Identify and list: desktop icons, Start button, taskbar, system tray" data-lang-sw="Tambua na andika: icons za njano, kifungo cha Kuanza, taskbar, system tray">Identify and list: desktop icons, Start button, taskbar, system tray</li>
+                    <li data-lang-en="Open 3 different programs from Start menu" data-lang-sw="Fungua programu 3 tofauti kutoka menyu ya Kuanza">Open 3 different programs from Start menu</li>
+                    <li data-lang-en="Minimize, maximize, and restore windows" data-lang-sw="Punguza, kubigiza, na kurejea Windows">Minimize, maximize, and restore windows</li>
+                    <li data-lang-en="Open File Explorer and navigate to Documents folder" data-lang-sw="Fungua File Explorer na navegeshea folda ya Documents">Open File Explorer and navigate to Documents folder</li>
+                </ol>
+            </div>
+
+            <div style="background: white; padding: 1.5rem; border-radius: 5px;">
+                <h4 style="margin-top: 0;">✅ Expected Outcome:</h4>
+                <p style="margin: 0;" data-lang-en="You should understand the desktop layout and be able to open and manage programs" data-lang-sw="Unapaswa kuelewa mpango wa njano na kuwa na uwezo wa kufungua na kumiliki programu">You should understand the desktop layout and be able to open and manage programs</p>
+            </div>
+        </section>
+
+        <!-- ===== CHAPTER SELECTOR ===== -->
+        <div style="margin: 4rem 0 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
+            <h3 style="text-align: center; color: #1E40AF; margin-top: 0;">
+                <span class="lang-en">Quick Jump to Any Chapter</span>
+                <span class="lang-sw" style="display: none;">Kuruka Haraka kwa Sura Yoyote</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 1.5rem;">
+                <a href="1.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 1</a>
+                <a href="2.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 2</a>
+                <a href="3.html" style="background: #1E40AF; color: white; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 3</a>
+                <a href="4.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 4</a>
+                <a href="5.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 5</a>
+                <a href="6.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 6</a>
+                <a href="7.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 7</a>
+                <a href="8.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 8</a>
+                <a href="9.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 9</a>
+                <a href="10.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 10</a>
+                <a href="11.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 11</a>
+                <a href="12.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 12</a>
+                <a href="13.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 13</a>
+                <a href="14.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 14</a>
+                <a href="15.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 15</a>
+                <a href="16.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 16</a>
+                <a href="17.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 17</a>
+                <a href="18.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 18</a>
+                <a href="19.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 19</a>
+                <a href="20.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 20</a>
+                <a href="21.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 21</a>
+                <a href="22.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 22</a>
+                <a href="23.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 23</a>
+                <a href="24.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 24</a>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 3rem 0; padding-top: 2rem; border-top: 2px solid #ddd;">
+            <a href="2.html" style="background: #24A148; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 600;">← <span data-lang-en="Chapter 2" data-lang-sw="Sura 2">Chapter 2</span></a>
+            <div style="text-align: center;">
+                <div style="font-weight: 600; color: #666;">
+                    <span data-lang-en="Chapter 3 of 24" data-lang-sw="Sura 3 kati ya 24">Chapter 3 of 24</span>
+                </div>
+            </div>
+            <a href="4.html" style="background: #1E40AF; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 600;"><span data-lang-en="Chapter 4" data-lang-sw="Sura 4">Chapter 4</span> →</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="background: #1F2937; color: white; padding: 3rem 0 1rem; margin-top: 5rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <h4 style="margin-top: 0;">About This Course</h4>
+                    <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;">A comprehensive vocational training program for computer literacy in Tanzania, aligned with VETA and NACTVET standards.</p>
+                </div>
+                <div>
+                    <h4 style="margin-top: 0;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="../index_en.html" style="color: #93C5FD; text-decoration: none;">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; text-align: center; opacity: 0.8;">
+                <p style="margin: 0; font-size: 0.9rem;">&copy; 2024 Jifunze Computer KWA URAHISI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setupLanguageToggle() {
+            const btn = document.getElementById('languageToggle');
+            const currentLang = localStorage.getItem('language') || 'en';
+            updateLanguage(currentLang);
+            
+            btn.addEventListener('click', function() {
+                const newLang = currentLang === 'en' ? 'sw' : 'en';
+                localStorage.setItem('language', newLang);
+                location.reload();
+            });
+        }
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang-en]').forEach(el => {
+                el.textContent = lang === 'en' ? el.getAttribute('data-lang-en') : el.getAttribute('data-lang-sw');
+            });
+        }
+
+        function toggleAnswer(btn) {
+            const answer = btn.nextElementSibling;
+            if (answer && answer.classList.contains('answer')) {
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+                btn.textContent = answer.style.display === 'none' ? 'Show Answer' : 'Hide Answer';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', setupLanguageToggle);
+    </script>
+</body>
+</html>
+

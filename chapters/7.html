@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Files & Folders - Jifunze Computer KWA URAHISI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); padding: 1rem 0;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 1.5rem; font-weight: 700; color: white;">Jifunze Computer KWA URAHISI</div>
+            <div>
+                <a href="../index_en.html" style="color: white; text-decoration: none; margin: 0 1.5rem;">Home</a>
+                <button id="languageToggle" style="background: #FFD700; color: #1E40AF; border: none; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 700; cursor: pointer;">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <header style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 50%, #10B981 100%); color: white; padding: 3rem 0; margin-bottom: 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <span style="font-size: 0.9rem; opacity: 0.9;">CHAPTER 7</span>
+            <h1 data-lang-en="Files & Folders" data-lang-sw="Faili na Folda">Files & Folders</h1>
+            <p data-lang-en="Understand how to organize and manage your digital documents" data-lang-sw="Elewa jinsi ya kuandaa na kumiliki hati zako za kidijitali">Understand how to organize and manage your digital documents</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.3);">
+                <div><div style="font-size: 0.8rem; opacity: 0.8;">Duration</div><div style="font-size: 1.3rem; font-weight: 700;">6 hours</div></div>
+                <div><div style="font-size: 0.8rem; opacity: 0.8;">Level</div><div style="font-size: 1.3rem; font-weight: 700;">NQF 2-3</div></div>
+                <div><div style="font-size: 0.8rem; opacity: 0.8;">Credits</div><div style="font-size: 1.3rem; font-weight: 700;">2 units</div></div>
+            </div>
+        </div>
+    </header>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; margin-bottom: 3rem;">
+        <section style="background: #E3F2FD; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border-left: 5px solid #1E40AF;">
+            <h2 data-lang-en="Learning Outcomes" data-lang-sw="Matokeo ya Kujifunza">Learning Outcomes</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0;">✓ <span data-lang-en="Understand file and folder concepts" data-lang-sw="Elewa dhana za faili na folda">Understand file and folder concepts</span></li>
+                <li style="padding: 0.5rem 0;">✓ <span data-lang-en="Create, rename, and delete files and folders" data-lang-sw="Tengeneza, badili jina, na futa faili na folda">Create, rename, and delete files and folders</span></li>
+                <li style="padding: 0.5rem 0;">✓ <span data-lang-en="Organize files in a logical folder structure" data-lang-sw="Andaa faili katika muundo wa folda lenye mantiki">Organize files in a logical folder structure</span></li>
+                <li style="padding: 0.5rem 0;">✓ <span data-lang-en="Search for files and folders" data-lang-sw="Tafuta faili na folda">Search for files and folders</span></li>
+                <li style="padding: 0.5rem 0;">✓ <span data-lang-en="Understand file naming conventions and extensions" data-lang-sw="Elewa kanuni za jina la faili na upanuzi">Understand file naming conventions and extensions</span></li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">7.1 <span data-lang-en="What Are Files and Folders?" data-lang-sw="Nini Ni Faili na Folda?">What Are Files and Folders?</span></h2>
+            <p data-lang-en="A FILE is a collection of data with a name stored on your computer. A FOLDER (also called directory) is a container that holds files and other folders." data-lang-sw="FAILI ni mkusanyo wa data wenye jina iliyohifadhiwa kwenye kompyuta. FOLDA (pia inaitwa saraka) ni chombo kinachohifadhi faili na folda nyingine.">A FILE is a collection of data with a name stored on your computer. A FOLDER (also called directory) is a container that holds files and other folders.</p>
+            
+            <h3 style="color: #24A148; margin-top: 2rem;" data-lang-en="File Extensions" data-lang-sw="Upanuzi wa Faili">File Extensions</h3>
+            <p data-lang-en="File extensions are letters after the dot (.) that show what type of file it is:" data-lang-sw="Upanuzi wa faili ni barua baada ya nukta (.) inayoonyesha aina ya faili:">File extensions are letters after the dot (.) that show what type of file it is:</p>
+            <ul>
+                <li><strong>.doc, .docx</strong> - <span data-lang-en="Word document" data-lang-sw="Hati ya Word">Word document</span></li>
+                <li><strong>.xls, .xlsx</strong> - <span data-lang-en="Excel spreadsheet" data-lang-sw="Lahajedwali la Excel">Excel spreadsheet</span></li>
+                <li><strong>.ppt, .pptx</strong> - <span data-lang-en="PowerPoint presentation" data-lang-sw="Wasilisho wa PowerPoint">PowerPoint presentation</span></li>
+                <li><strong>.txt</strong> - <span data-lang-en="Plain text file" data-lang-sw="Faili la maandishi safi">Plain text file</span></li>
+                <li><strong>.jpg, .png, .gif</strong> - <span data-lang-en="Image files" data-lang-sw="Faili za picha">Image files</span></li>
+                <li><strong>.pdf</strong> - <span data-lang-en="Portable Document Format" data-lang-sw="Muundo wa Hati Sanjari">Portable Document Format</span></li>
+                <li><strong>.zip</strong> - <span data-lang-en="Compressed archive" data-lang-sw="Jalada lililooshwa">Compressed archive</span></li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">7.2 <span data-lang-en="Creating Folders" data-lang-sw="Kutengeneza Folda">Creating Folders</span></h2>
+            <ol>
+                <li data-lang-en="Open File Explorer (Windows + E)" data-lang-sw="Fungua File Explorer (Windows + E)">Open File Explorer (Windows + E)</li>
+                <li data-lang-en="Navigate to Documents folder" data-lang-sw="Navegeshea folda ya Documents">Navigate to Documents folder</li>
+                <li data-lang-en="Right-click in empty space" data-lang-sw="Right-click katika mahali tupu">Right-click in empty space</li>
+                <li data-lang-en="Select 'New > Folder'" data-lang-sw="Chagua 'New > Folder'">Select 'New > Folder'</li>
+                <li data-lang-en="Type a descriptive name (no special characters)" data-lang-sw="Andika jina linaloeleza (hakuna alama)" >Type a descriptive name (no special characters)</li>
+                <li data-lang-en="Press Enter" data-lang-sw="Bonyeza Enter">Press Enter</li>
+            </ol>
+
+            <h3 style="color: #24A148; margin-top: 2rem;" data-lang-en="Naming Folders" data-lang-sw="Kuweka Jina la Folda">Naming Folders</h3>
+            <ul>
+                <li data-lang-en="Use clear, descriptive names" data-lang-sw="Tumia majina yenye maelezo">Use clear, descriptive names</li>
+                <li data-lang-en="Use dates in YYYY-MM-DD format (2024-01-15)" data-lang-sw="Tumia tarehe katika muundo wa YYYY-MM-DD (2024-01-15)">Use dates in YYYY-MM-DD format (2024-01-15)</li>
+                <li data-lang-en="Avoid spaces - use underscores or hyphens" data-lang-sw="Epusha umbali - tumia underscores au hyphens">Avoid spaces - use underscores or hyphens</li>
+                <li data-lang-en="Examples: Documents_2024, Projects, Invoices_Jan-2024" data-lang-sw="Mifano: Documents_2024, Projects, Invoices_Jan-2024">Examples: Documents_2024, Projects, Invoices_Jan-2024</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">7.3 <span data-lang-en="Moving and Copying Files" data-lang-sw="Kusogeza na Kunakili Faili">Moving and Copying Files</span></h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #24A148;">📋 <span data-lang-en="Copy" data-lang-sw="Nakili">Copy</span></h4>
+                    <ol>
+                        <li data-lang-en="Right-click file" data-lang-sw="Right-click faili">Right-click file</li>
+                        <li data-lang-en="Select 'Copy'" data-lang-sw="Chagua 'Copy'">Select 'Copy'</li>
+                        <li data-lang-en="Go to destination folder" data-lang-sw="Nenda folda ya marudio">Go to destination folder</li>
+                        <li data-lang-en="Right-click and 'Paste'" data-lang-sw="Right-click na 'Paste'">Right-click and 'Paste'</li>
+                    </ol>
+                </div>
+                <div style="background: #FCE4EC; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #C2185B;">✂️ <span data-lang-en="Cut/Move" data-lang-sw="Kata/Sogeza">Cut/Move</span></h4>
+                    <ol>
+                        <li data-lang-en="Right-click file" data-lang-sw="Right-click faili">Right-click file</li>
+                        <li data-lang-en="Select 'Cut'" data-lang-sw="Chagua 'Cut'">Select 'Cut'</li>
+                        <li data-lang-en="Go to destination folder" data-lang-sw="Nenda folda ya marudio">Go to destination folder</li>
+                        <li data-lang-en="Right-click and 'Paste'" data-lang-sw="Right-click na 'Paste'">Right-click and 'Paste'</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: #FFF8E1; padding: 2rem; border-radius: 8px; margin: 3rem 0; border-left: 5px solid #FFD700;">
+            <h2 data-lang-en="Chapter Summary" data-lang-sw="Muhtasari wa Sura">Chapter Summary</h2>
+            <ul>
+                <li><strong data-lang-en="Files" data-lang-sw="Faili">Files</strong> <span data-lang-en="store data with names and extensions" data-lang-sw="huhifadhi data na majina na upanuzi">store data with names and extensions</span></li>
+                <li><strong data-lang-en="Folders" data-lang-sw="Folda">Folders</strong> <span data-lang-en="organize files hierarchically" data-lang-sw="zina andaa faili kwa mlolongo">organize files hierarchically</span></li>
+                <li><strong data-lang-en="Good organization" data-lang-sw="Kuandaa vizuri">Good organization</strong> <span data-lang-en="saves time and prevents data loss" data-lang-sw="zuia wakati na inaepusha kupoteza data">saves time and prevents data loss</span></li>
+            </ul>
+        </section>
+
+        <!-- ===== CHAPTER SELECTOR ===== -->
+        <div style="margin: 4rem 0 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
+            <h3 style="text-align: center; color: #1E40AF; margin-top: 0;">
+                <span class="lang-en">Quick Jump to Any Chapter</span>
+                <span class="lang-sw" style="display: none;">Kuruka Haraka kwa Sura Yoyote</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 1.5rem;">
+                <a href="1.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 1</a>
+                <a href="2.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 2</a>
+                <a href="3.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 3</a>
+                <a href="4.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 4</a>
+                <a href="5.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 5</a>
+                <a href="6.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 6</a>
+                <a href="7.html" style="background: #1E40AF; color: white; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 7</a>
+                <a href="8.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 8</a>
+                <a href="9.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 9</a>
+                <a href="10.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 10</a>
+                <a href="11.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 11</a>
+                <a href="12.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 12</a>
+                <a href="13.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 13</a>
+                <a href="14.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 14</a>
+                <a href="15.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 15</a>
+                <a href="16.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 16</a>
+                <a href="17.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 17</a>
+                <a href="18.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 18</a>
+                <a href="19.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 19</a>
+                <a href="20.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 20</a>
+                <a href="21.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 21</a>
+                <a href="22.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 22</a>
+                <a href="23.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 23</a>
+                <a href="24.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 24</a>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 3rem 0; padding-top: 2rem; border-top: 2px solid #ddd;">
+            <a href="6.html" style="background: #24A148; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none;">← Chapter 6</a>
+            <span style="font-weight: 600;">Chapter 7 of 24</span>
+            <a href="8.html" style="background: #1E40AF; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none;">Chapter 8 →</a>
+        </div>
+    </div>
+
+    <footer style="background: #1F2937; color: white; padding: 3rem 0 1rem; margin-top: 5rem; text-align: center; opacity: 0.8;">
+        <p>&copy; 2024 Jifunze Computer KWA URAHISI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function setupLanguageToggle() {
+            const btn = document.getElementById('languageToggle');
+            const currentLang = localStorage.getItem('language') || 'en';
+            updateLanguage(currentLang);
+            btn.addEventListener('click', () => {
+                const newLang = currentLang === 'en' ? 'sw' : 'en';
+                localStorage.setItem('language', newLang);
+                location.reload();
+            });
+        }
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang-en]').forEach(el => {
+                el.textContent = lang === 'en' ? el.getAttribute('data-lang-en') : el.getAttribute('data-lang-sw');
+            });
+        }
+        document.addEventListener('DOMContentLoaded', setupLanguageToggle);
+    </script>
+</body>
+</html>
+

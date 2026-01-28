@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Computer Components & Hardware - Jifunze Computer KWA URAHISI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 1rem 0;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 1.5rem; font-weight: 700; color: white;">
+                Jifunze Computer KWA URAHISI
+            </div>
+            <div>
+                <a href="../index_en.html" style="color: white; text-decoration: none; margin: 0 1.5rem; font-weight: 600;">Home</a>
+                <button id="languageToggle" style="background: #FFD700; color: #1E40AF; border: none; padding: 0.5rem 1rem; border-radius: 5px; font-weight: 700; cursor: pointer;">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CHAPTER HEADER -->
+    <header style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 50%, #10B981 100%); color: white; padding: 3rem 0; margin-bottom: 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <span style="font-size: 0.9rem; opacity: 0.9;">CHAPTER 2</span>
+            <h1 data-lang-en="Computer Components & Hardware" data-lang-sw="Sehemu za Kompyuta na Vifaa vya Elektroniki">Computer Components & Hardware</h1>
+            <p data-lang-en="Understanding the building blocks of your computer" data-lang-sw="Kuelewa sehemu zinazoundwa kwa kompyuta yako">Understanding the building blocks of your computer</p>
+            
+            <!-- CHAPTER METADATA -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.3);">
+                <div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;" data-lang-en="Duration" data-lang-sw="Muda">Duration</div>
+                    <div style="font-size: 1.3rem; font-weight: 700;">6 hours</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;" data-lang-en="Level" data-lang-sw="Kiwango">Level</div>
+                    <div style="font-size: 1.3rem; font-weight: 700;">NQF 2-3</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;" data-lang-en="Credits" data-lang-sw="Alama">Credits</div>
+                    <div style="font-size: 1.3rem; font-weight: 700;">2 units</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; margin-bottom: 3rem;">
+
+        <!-- LEARNING OUTCOMES -->
+        <section style="background: #E3F2FD; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border-left: 5px solid #1E40AF;">
+            <h2 data-lang-en="Learning Outcomes" data-lang-sw="Matokeo ya Kujifunza">Learning Outcomes</h2>
+            <p data-lang-en="After completing this chapter, you will be able to:" data-lang-sw="Baada ya kumaliza sura hii, utakuwa na uwezo wa:">After completing this chapter, you will be able to:</p>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Identify the main hardware components of a computer" data-lang-sw="Kutambua sehemu kuu za elektroniki za kompyuta">Identify the main hardware components of a computer</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Explain the function of CPU, RAM, and Storage" data-lang-sw="Kueleza kazi ya CPU, RAM, na Storage">Explain the function of CPU, RAM, and Storage</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Describe input and output devices" data-lang-sw="Kueleza vifaa vya kuingiza na kutoa data">Describe input and output devices</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Understand motherboard and power supply functions" data-lang-sw="Kuelewa kazi ya motherboard na chanzo cha umeme">Understand motherboard and power supply functions</span></li>
+                <li style="padding: 0.5rem 0; font-weight: 500;">✓ <span data-lang-en="Identify components inside a computer system unit" data-lang-sw="Kutambua sehemu ndani ya kesi ya kompyuta">Identify components inside a computer system unit</span></li>
+            </ul>
+        </section>
+
+        <!-- KEY CONCEPTS & GLOSSARY -->
+        <section style="margin-bottom: 3rem;">
+            <h2 data-lang-en="Key Concepts & Glossary" data-lang-sw="Dhana Muhimu na Kamusi">Key Concepts & Glossary</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Hardware</h4>
+                    <p data-lang-en="The physical parts of a computer that you can touch - like keyboard, monitor, and circuit boards" data-lang-sw="Sehemu halisi za kompyuta ambazo unaweza kuzigusa - kama kibodi, onyesho, na bodi za umeme">The physical parts of a computer that you can touch - like keyboard, monitor, and circuit boards</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">CPU (Central Processing Unit)</h4>
+                    <p data-lang-en="The 'brain' of the computer that performs all calculations and controls all other parts" data-lang-sw="'Ubongo' wa kompyuta ambao hutekeleza hesabu zote na kudhibiti sehemu zingine">The 'brain' of the computer that performs all calculations and controls all other parts</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">RAM (Random Access Memory)</h4>
+                    <p data-lang-en="Temporary memory that stores data currently being used. It is erased when the computer is switched off" data-lang-sw="Kumbukumbu ya muda ambayo inahifadhi data iliyokuwa ikitumika. Inafutwa wakati kompyuta inapozimwa">Temporary memory that stores data currently being used. It is erased when computer is switched off</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Storage Device</h4>
+                    <p data-lang-en="Permanent memory that keeps data even when powered off - like Hard Drive, SSD, or USB stick" data-lang-sw="Kumbukumbu ya kudumu inayohifadhi data hata wakati haipati umeme - kama Hard Drive, SSD, au mkanda wa USB">Permanent memory that keeps data even when powered off - like Hard Drive, SSD, or USB stick</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Motherboard</h4>
+                    <p data-lang-en="The main circuit board that connects all hardware components together" data-lang-sw="Ubao kuu la umeme unaounganisha sehemu zote za elektroniki pamoja">The main circuit board that connects all hardware components together</p>
+                </div>
+                <div style="background: #F5F5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #1E40AF; margin-top: 0;">Peripheral</h4>
+                    <p data-lang-en="Any external device connected to the computer, like printer, scanner, or mouse" data-lang-sw="Kifaa chochote cha nje kilichounganishwa na kompyuta, kama printa, scanner, au panya">Any external device connected to the computer, like printer, scanner, or mouse</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2.1 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="2.1 Main Components of a Computer" data-lang-sw="2.1 Sehemu Kuu za Kompyuta">2.1 Main Components of a Computer</span>
+            </h2>
+            
+            <p data-lang-en="Every computer has several main parts that work together:" data-lang-sw="Kila kompyuta ina sehemu kadhaa kuu zinazofanya kazi pamoja:">Every computer has several main parts that work together:</p>
+            
+            <!-- COMPONENTS TABLE -->
+            <table style="width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem;">
+                <thead>
+                    <tr style="background: #1E40AF; color: white;">
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Component" data-lang-sw="Sehemu">Component</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Function" data-lang-sw="Kazi">Function</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Location" data-lang-sw="Mahali">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">CPU</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Processes all information and controls all other parts" data-lang-sw="Huchambua maelezo yote na kudhibiti sehemu zingine">Processes all information and controls all other parts</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Inside system unit</td>
+                    </tr>
+                    <tr style="background: #F5F5F5;">
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">RAM</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Stores data that CPU is currently using - fast but temporary" data-lang-sw="Inahifadhi data ambayo CPU inatumia - haraka lakini ya muda">Stores data that CPU is currently using - fast but temporary</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Inside system unit</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Hard Drive</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Permanently stores all programs and files even when powered off" data-lang-sw="Inahifadhi kudumu programu na faili hata wakati haipati umeme">Permanently stores all programs and files even when powered off</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Inside system unit</td>
+                    </tr>
+                    <tr style="background: #F5F5F5;">
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Motherboard</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Main circuit board connecting all components" data-lang-sw="Ubao kuu la umeme unaoiunganisha sehemu zote">Main circuit board connecting all components</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Inside system unit</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Power Supply</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Supplies electrical power to all components" data-lang-sw="Hutoa umeme kwa sehemu zote">Supplies electrical power to all components</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Inside system unit</td>
+                    </tr>
+                    <tr style="background: #F5F5F5;">
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;">Monitor</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Displays the image and information from the computer" data-lang-sw="Inaonyesha picha na maelezo kutoka kwa kompyuta">Displays the image and information from the computer</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;">Outside (desktop)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION 2.2 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="2.2 Understanding CPU, RAM, and Storage" data-lang-sw="2.2 Kuelewa CPU, RAM, na Storage">2.2 Understanding CPU, RAM, and Storage</span>
+            </h2>
+            
+            <div style="background: #FFF3CD; padding: 1.5rem; border-left: 4px solid #FFD700; margin-bottom: 2rem;">
+                <h4 style="margin-top: 0; color: #856404;">💡 <span data-lang-en="Think of it this way:" data-lang-sw="Fikiria kwa njia hii:">Think of it this way:</span></h4>
+                <p style="margin: 0; color: #856404;" data-lang-en="Your computer is like a restaurant kitchen:" data-lang-sw="Kompyuta yako ni kama jikoni la mgahawa:">Your computer is like a restaurant kitchen:</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #24A148; margin-top: 0;">CPU = Chef</h4>
+                    <p data-lang-en="The chef (CPU) follows recipes (programs) and prepares dishes (processes data)" data-lang-sw="Jambazi (CPU) hufuata recipes (programu) na huandaa chakula (huchambua data)">The chef (CPU) follows recipes (programs) and prepares dishes (processes data)</p>
+                </div>
+                <div style="background: #FCE4EC; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #C2185B; margin-top: 0;">RAM = Work Counter</h4>
+                    <p data-lang-en="The work counter (RAM) holds ingredients (data) the chef is currently using - temporary only" data-lang-sw="Meza ya kazi (RAM) inabaki viungo (data) ambavyo jambazi anatumia - ya muda tu">The work counter (RAM) holds ingredients (data) the chef is currently using - temporary only</p>
+                </div>
+                <div style="background: #E0F2F1; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #00796B; margin-top: 0;">Hard Drive = Storage Room</h4>
+                    <p data-lang-en="The storage room (Hard Drive) keeps recipes and ingredients permanently" data-lang-sw="Chumba cha hifadhi (Hard Drive) kinabaki recipes na viungo kudumu">The storage room (Hard Drive) keeps recipes and ingredients permanently</p>
+                </div>
+                <div style="background: #F3E5F5; padding: 1.5rem; border-radius: 8px;">
+                    <h4 style="color: #512DA8; margin-top: 0;">Motherboard = Kitchen Layout</h4>
+                    <p data-lang-en="The kitchen layout (Motherboard) connects all stations together" data-lang-sw="Mpango wa jikoni (Motherboard) unaunganisha vituo vyote">The kitchen layout (Motherboard) connects all stations together</p>
+                </div>
+            </div>
+
+            <h3 style="color: #1E40AF; margin-top: 2rem;" data-lang-en="CPU Speed (Processor Speed)" data-lang-sw="Kasi ya CPU">CPU Speed (Processor Speed)</h3>
+            <p data-lang-en="CPUs are measured in GHz (Gigahertz). Higher GHz = faster processing:" data-lang-sw="CPUs zikutajwe kwa GHz (Gigahertz). GHz zaidi = kuchambua haraka zaidi:">CPUs are measured in GHz (Gigahertz). Higher GHz = faster processing:</p>
+            <ul>
+                <li data-lang-en="2 GHz: Slower, basic tasks" data-lang-sw="2 GHz: Polepole, kazi za msingi">2 GHz: Slower, basic tasks</li>
+                <li data-lang-en="3-4 GHz: Good for everyday use" data-lang-sw="3-4 GHz: Nzuri kwa matumizi ya kila siku">3-4 GHz: Good for everyday use</li>
+                <li data-lang-en="5+ GHz: Very fast, gaming and video editing" data-lang-sw="5+ GHz: Haraka sana, michezo na haraka ya video">5+ GHz: Very fast, gaming and video editing</li>
+            </ul>
+
+            <h3 style="color: #1E40AF; margin-top: 2rem;" data-lang-en="RAM Amount" data-lang-sw="Kiasi cha RAM">RAM Amount</h3>
+            <p data-lang-en="More RAM means you can run more programs at once:" data-lang-sw="RAM zaidi inamaanisha unaweza kuendesha programu zaidi kwa wakati mmoja:">More RAM means you can run more programs at once:</p>
+            <ul>
+                <li data-lang-en="2-4 GB: Basic browsing and office work" data-lang-sw="2-4 GB: Mtandao wa msingi na kazi ya ofisi">2-4 GB: Basic browsing and office work</li>
+                <li data-lang-en="8 GB: Good for everyday use with multiple programs" data-lang-sw="8 GB: Nzuri kwa matumizi ya kila siku na programu kadhaa">8 GB: Good for everyday use with multiple programs</li>
+                <li data-lang-en="16+ GB: Professional work, video editing, gaming" data-lang-sw="16+ GB: Kazi ya kitaalamu, haraka ya video, michezo">16+ GB: Professional work, video editing, gaming</li>
+            </ul>
+
+            <h3 style="color: #1E40AF; margin-top: 2rem;" data-lang-en="Storage Types" data-lang-sw="Aina za Storage">Storage Types</h3>
+            <div style="margin: 1rem 0;">
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">Hard Disk Drive (HDD)</p>
+                <p style="margin: 0 0 1rem 0;" data-lang-en="Uses spinning disks to store data - slower but cheaper and larger capacity" data-lang-sw="Inatumia diski zinazopokezana kuhifadhi data - polepole lakini rahisi na kupima kwa kawaida">Uses spinning disks to store data - slower but cheaper and larger capacity</p>
+                
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">Solid State Drive (SSD)</p>
+                <p style="margin: 0;" data-lang-en="Uses flash memory - very fast but more expensive" data-lang-sw="Inatumia flash memory - haraka sana lakini ghali zaidi">Uses flash memory - very fast but more expensive</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2.3 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="2.3 Input and Output Devices" data-lang-sw="2.3 Vifaa vya Kuingiza na Kutoa Data">2.3 Input and Output Devices</span>
+            </h2>
+
+            <p data-lang-en="To communicate with the computer, we need devices:" data-lang-sw="Ili kuwasiliana na kompyuta, tunahitaji vifaa:">To communicate with the computer, we need devices:</p>
+
+            <h3 style="color: #24A148; margin-top: 2rem;" data-lang-en="INPUT DEVICES - Send information TO the computer" data-lang-sw="VIFAA VYA KUINGIZA - Kutuma maelezo KISHA kompyuta">INPUT DEVICES - Send information TO the computer</h3>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">🖱️ Mouse</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Points and clicks on screen elements" data-lang-sw="Kuashiria na kubofya vipengee vya skrini">Points and clicks on screen elements</p>
+                </div>
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">⌨️ Keyboard</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Types text and commands" data-lang-sw="Kuandika maandishi na amri">Types text and commands</p>
+                </div>
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">📷 Scanner</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Converts paper documents to digital files" data-lang-sw="Hubadili hati za karatasi kuwa faili za dijitali">Converts paper documents to digital files</p>
+                </div>
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">🎙️ Microphone</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Records sound and voice" data-lang-sw="Inakurekodi sauti na sauti">Records sound and voice</p>
+                </div>
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">📱 Touchscreen</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Responds to finger touches" data-lang-sw="Ina jibu kwa kumgusa kidole">Responds to finger touches</p>
+                </div>
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">🕹️ Joystick</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Controls games and simulations" data-lang-sw="Kudhibiti michezo na maigizo">Controls games and simulations</p>
+                </div>
+                <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #24A148;">
+                    <h4 style="margin-top: 0; color: #24A148;">📷 Webcam</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Records video and images" data-lang-sw="Inakurekodi video na picha">Records video and images</p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF6F00; margin-top: 2rem;" data-lang-en="OUTPUT DEVICES - Send information FROM the computer" data-lang-sw="VIFAA VYA KUTOA - Kutuma maelezo KUTOKA kompyuta">OUTPUT DEVICES - Send information FROM the computer</h3>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="background: #FFE0B2; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF6F00;">
+                    <h4 style="margin-top: 0; color: #FF6F00;">🖥️ Monitor</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Displays information as images and text" data-lang-sw="Inaonyesha maelezo kama picha na maandishi">Displays information as images and text</p>
+                </div>
+                <div style="background: #FFE0B2; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF6F00;">
+                    <h4 style="margin-top: 0; color: #FF6F00;">🖨️ Printer</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Produces paper copies of documents" data-lang-sw="Inazalisha nakala za karatasi za hati">Produces paper copies of documents</p>
+                </div>
+                <div style="background: #FFE0B2; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF6F00;">
+                    <h4 style="margin-top: 0; color: #FF6F00;">🔊 Speakers</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Produces sound and audio" data-lang-sw="Inazalisha sauti na habari za sauti">Produces sound and audio</p>
+                </div>
+                <div style="background: #FFE0B2; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF6F00;">
+                    <h4 style="margin-top: 0; color: #FF6F00;">📠 Projector</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Projects images onto a large screen or wall" data-lang-sw="Inakompanya picha kwenye skrini kubwa au ukuta">Projects images onto a large screen or wall</p>
+                </div>
+                <div style="background: #FFE0B2; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF6F00;">
+                    <h4 style="margin-top: 0; color: #FF6F00;">🎧 Headphones</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Outputs sound privately to the user" data-lang-sw="Hutoa sauti hadharani kwa mtumiaji">Outputs sound privately to the user</p>
+                </div>
+                <div style="background: #FFE0B2; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FF6F00;">
+                    <h4 style="margin-top: 0; color: #FF6F00;">📡 Modem</h4>
+                    <p style="font-size: 0.9rem; margin: 0;" data-lang-en="Connects to internet and network" data-lang-sw="Inajezeeka kwa intaneti na mtandao">Connects to internet and network</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2.4 -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="border-bottom: 3px solid #1E40AF; padding-bottom: 0.5rem;">
+                <span data-lang-en="2.4 Inside the Computer System Unit" data-lang-sw="2.4 Ndani ya Kesi ya Kompyuta">2.4 Inside the Computer System Unit</span>
+            </h2>
+
+            <p data-lang-en="When you open the case of a desktop computer, you'll see these main components:" data-lang-sw="Wakati unafungua kesi ya kompyuta ya desktop, utakuta sehemu kuu hizi:">When you open the case of a desktop computer, you'll see these main components:</p>
+
+            <div style="background: #F5F5F5; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+                <h4 style="text-align: center; color: #1E40AF; margin-top: 0;">🖼️ SYSTEM UNIT LAYOUT</h4>
+                <pre style="background: white; padding: 1.5rem; border-radius: 5px; overflow-x: auto; font-size: 0.85rem;">
+┌─────────────────────────────────────┐
+│   POWER SUPPLY                      │  (Converts AC to DC power)
+│   (Located at bottom)               │
+├─────────────────────────────────────┤
+│   MOTHERBOARD (Main circuit board)  │
+│   ├─ CPU (Attached with heatsink)  │
+│   ├─ RAM slots (1-4 RAM sticks)    │
+│   └─ Expansion slots                │
+├─────────────────────────────────────┤
+│   HARD DRIVE                        │  (Usually at bottom front)
+│   (Storage device)                  │
+├─────────────────────────────────────┤
+│   GRAPHICS CARD                     │  (Optional, for better graphics)
+│   (In expansion slot)               │
+├─────────────────────────────────────┤
+│   COOLING SYSTEM                    │
+│   ├─ CPU Fan (on CPU heatsink)     │
+│   ├─ Case fans (for airflow)       │
+│   └─ Thermal paste (CPU cooling)   │
+└─────────────────────────────────────┘
+                </pre>
+            </div>
+
+            <h3 style="color: #1E40AF;" data-lang-en="Important Components Explained" data-lang-sw="Sehemu Muhimu Zilizolezwa">Important Components Explained</h3>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="color: #24A148; margin-bottom: 0.5rem;">🌡️ Heat Sink & Fan</h4>
+                <p data-lang-en="CPU produces heat when processing. The heat sink absorbs heat and the fan cools it down to prevent damage" data-lang-sw="CPU inazalisha joto wakati wa huchambua. Heatsink inakula joto na pengine inaingia joto kuuzuia uharifu">CPU produces heat when processing. The heat sink absorbs heat and the fan cools it down to prevent damage</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="color: #24A148; margin-bottom: 0.5rem;">💾 RAM (Memory Sticks)</h4>
+                <p data-lang-en="Long, thin green circuit boards that slot vertically into the motherboard. More sticks = more RAM" data-lang-sw="Bodi ndefu, nyembamba za umeme zenye rangi ya kijani zinazoingia kwa wima kwenye motherboard. Vipande zaidi = RAM zaidi">Long, thin green circuit boards that slot vertically into the motherboard. More sticks = more RAM</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="color: #24A148; margin-bottom: 0.5rem;">⚡ Power Supply Unit (PSU)</h4>
+                <p data-lang-en="A metal box with a large fan. It takes AC power from the wall and converts it to DC power for all components. Capacity measured in Watts (W)" data-lang-sw="Sanduku la chuma lenye pengine kubwa. Inachukua umeme wa AC kutoka kwa ukuta na kuubadili kuwa umeme wa DC kwa sehemu zote. Uwezo ukipimwa kwa Watts (W)">A metal box with a large fan. It takes AC power from the wall and converts it to DC power for all components. Capacity measured in Watts (W)</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h4 style="color: #24A148; margin-bottom: 0.5rem;">📀 Hard Drive/SSD</h4>
+                <p data-lang-en="Usually mounted horizontally at the bottom front. Connected to motherboard via SATA cable and to power supply via power cable" data-lang-sw="Kawaida inatokwa kwa usawa katika chini ya mbele. Imeunganishwa na motherboard kupitia kabel ya SATA na kwa chanzo cha umeme kupitia kabel ya umeme">Usually mounted horizontally at the bottom front. Connected to motherboard via SATA cable and to power supply via power cable</p>
+            </div>
+
+            <div class="warning-box" style="background: #FFEBEE; border-left: 4px solid #F44336; padding: 1.5rem; margin: 2rem 0;">
+                <h4 style="color: #C62828; margin-top: 0;">⚠️ <span data-lang-en="Safety Warning" data-lang-sw="Onyo wa Usalama">Safety Warning</span></h4>
+                <p style="margin: 0; color: #C62828;" data-lang-en="Always switch OFF and unplug the computer before opening the case" data-lang-sw="Kamata kubofya kutoka kwa pembetatu na kuondoa plagi ya kompyuta kabla ya kufungua kesi">Always switch OFF and unplug the computer before opening the case</p>
+            </div>
+        </section>
+
+        <!-- CHAPTER SUMMARY -->
+        <section style="background: #FFF8E1; padding: 2rem; border-radius: 8px; margin: 3rem 0; border-left: 5px solid #FFD700;">
+            <h2 data-lang-en="Chapter Summary" data-lang-sw="Muhtasari wa Sura">Chapter Summary</h2>
+            <ul>
+                <li><strong data-lang-en="Hardware" data-lang-sw="Hardware">Hardware</strong> <span data-lang-en="is the physical part of a computer" data-lang-sw="ni sehemu halisi ya kompyuta">is the physical part of a computer</span></li>
+                <li><strong data-lang-en="CPU (brain)" data-lang-sw="CPU (ubongo)">CPU (brain)</strong> <span data-lang-en="processes all information and controls all other parts" data-lang-sw="huchambua maelezo yote na kudhibiti sehemu zingine">processes all information and controls all other parts</span></li>
+                <li><strong data-lang-en="RAM" data-lang-sw="RAM">RAM</strong> <span data-lang-en="is fast temporary memory for current tasks" data-lang-sw="ni kumbukumbu ya haraka ya muda kwa kazi za sasa">is fast temporary memory for current tasks</span></li>
+                <li><strong data-lang-en="Hard Drive/SSD" data-lang-sw="Hard Drive/SSD">Hard Drive/SSD</strong> <span data-lang-en="permanently stores all programs and files" data-lang-sw="inahifadhi kudumu programu na faili zote">permanently stores all programs and files</span></li>
+                <li><strong data-lang-en="Motherboard" data-lang-sw="Motherboard">Motherboard</strong> <span data-lang-en="connects all components together" data-lang-sw="inaunganisha sehemu zote pamoja">connects all components together</span></li>
+                <li><strong data-lang-en="Input devices" data-lang-sw="Vifaa vya kuingiza">Input devices</strong> <span data-lang-en="send information to the computer (keyboard, mouse, scanner)" data-lang-sw="kutuma maelezo kwa kompyuta (kibodi, panya, scanner)">send information to the computer (keyboard, mouse, scanner)</span></li>
+                <li><strong data-lang-en="Output devices" data-lang-sw="Vifaa vya kutoa">Output devices</strong> <span data-lang-en="receive information from the computer (monitor, printer, speakers)" data-lang-sw="kuchukua maelezo kutoka kwa kompyuta (onyesho, printa, wanamuziki)">receive information from the computer (monitor, printer, speakers)</span></li>
+            </ul>
+        </section>
+
+        <!-- SELF-CHECK QUESTIONS -->
+        <section style="margin: 3rem 0;">
+            <h2 data-lang-en="Self-Check Questions" data-lang-sw="Maswali ya Kujichambua">Self-Check Questions</h2>
+            
+            <div class="question" style="background: #F5F5F5; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+                <h4>1. <span data-lang-en="Which component is known as the 'brain' of the computer?" data-lang-sw="Ni sehemu gani inayojulikana kama 'ubongo' wa kompyuta?">Which component is known as the 'brain' of the computer?</span></h4>
+                <div>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q1"> <span data-lang-en="a) RAM" data-lang-sw="a) RAM">a) RAM</span></label>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q1"> <span data-lang-en="b) CPU" data-lang-sw="b) CPU">b) CPU</span></label>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q1"> <span data-lang-en="c) Hard Drive" data-lang-sw="c) Hard Drive">c) Hard Drive</span></label>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q1"> <span data-lang-en="d) Motherboard" data-lang-sw="d) Motherboard">d) Motherboard</span></label>
+                </div>
+                <button onclick="toggleAnswer(this)" style="background: #1E40AF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; margin-top: 1rem;">Show Answer</button>
+                <div class="answer" style="display: none; background: #E8F5E9; padding: 1rem; margin-top: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #24A148; font-weight: 600;">✓ Correct Answer: b) CPU</p>
+                    <p style="margin: 0.5rem 0 0 0; color: #666;" data-lang-en="The CPU is the processor that controls all other parts and performs all calculations" data-lang-sw="CPU ni processor inayodhibiti sehemu zingine zote na kutekeleza hesabu zote">The CPU is the processor that controls all other parts and performs all calculations</p>
+                </div>
+            </div>
+
+            <div class="question" style="background: #F5F5F5; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+                <h4>2. <span data-lang-en="What happens to data stored in RAM when you turn off the computer?" data-lang-sw="Nini kinachotokea kwa data iliyohifadhiwa kwenye RAM wakati unazima kompyuta?">What happens to data stored in RAM when you turn off the computer?</span></h4>
+                <div style="background: white; padding: 1rem; border-radius: 4px; margin-bottom: 0.5rem;">
+                    <textarea style="width: 100%; min-height: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;" placeholder="Your answer..."></textarea>
+                </div>
+                <button onclick="toggleAnswer(this)" style="background: #1E40AF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Show Answer</button>
+                <div class="answer" style="display: none; background: #E8F5E9; padding: 1rem; margin-top: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #24A148; font-weight: 600;">✓ Expected Answer:</p>
+                    <p style="margin: 0.5rem 0 0 0; color: #666;" data-lang-en="All data in RAM is erased/deleted when the computer is turned off because RAM is temporary memory that requires power to hold data" data-lang-sw="Data yote kwenye RAM inafutwa/kuondolewa wakati kompyuta inapozimwa kwa sababu RAM ni kumbukumbu ya muda inayohitaji umeme kushikilia data">All data in RAM is erased/deleted when the computer is turned off because RAM is temporary memory that requires power to hold data</p>
+                </div>
+            </div>
+
+            <div class="question" style="background: #F5F5F5; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px;">
+                <h4>3. <span data-lang-en="True or False: A mouse is an output device" data-lang-sw="Kweli au Uongo: Panya ni kifaa cha kutoa">True or False: A mouse is an output device</span></h4>
+                <div>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q3"> <span data-lang-en="True" data-lang-sw="Kweli">True</span></label>
+                    <label style="display: block; margin: 0.5rem 0;"><input type="radio" name="q3"> <span data-lang-en="False" data-lang-sw="Uongo">False</span></label>
+                </div>
+                <button onclick="toggleAnswer(this)" style="background: #1E40AF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; margin-top: 1rem;">Show Answer</button>
+                <div class="answer" style="display: none; background: #E8F5E9; padding: 1rem; margin-top: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #24A148; font-weight: 600;">✓ Correct Answer: False</p>
+                    <p style="margin: 0.5rem 0 0 0; color: #666;" data-lang-en="A mouse is an INPUT device because it sends information (your clicks) TO the computer" data-lang-sw="Panya ni kifaa cha KUINGIZA kwa sababu inatuma maelezo (kubofya kwako) KISHA kompyuta">A mouse is an INPUT device because it sends information (your clicks) TO the computer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICAL EXERCISE -->
+        <section style="background: #E3F2FD; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+            <h2 data-lang-en="Practical Exercise 2.1: Identify Computer Components" data-lang-sw="Zoezi la Vitendo 2.1: Kutambua Sehemu za Kompyuta">Practical Exercise 2.1: Identify Computer Components</h2>
+            
+            <div style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 5px;">
+                <h4 style="margin-top: 0; color: #1E40AF;">📋 Objective:</h4>
+                <p style="margin: 0;" data-lang-en="To identify and label the main hardware components of a computer" data-lang-sw="Kutambua na kuandika wazi sehemu kuu za elektroniki ya kompyuta">To identify and label the main hardware components of a computer</p>
+            </div>
+
+            <div style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 5px;">
+                <h4 style="margin-top: 0; color: #1E40AF;">📝 Steps:</h4>
+                <ol>
+                    <li data-lang-en="Locate a desktop computer in your training center or classroom" data-lang-sw="Tafuta kompyuta ya desktop katika kituo chako cha mafunzo au darasa">Locate a desktop computer in your training center or classroom</li>
+                    <li data-lang-en="With permission, open the computer case (ask your teacher/technician first)" data-lang-sw="Kwa ruhusa, fungua kesi ya kompyuta (kumbuza mwalimu/fundi kwanza)">With permission, open the computer case (ask your teacher/technician first)</li>
+                    <li data-lang-en="Identify each main component: CPU, RAM, Hard Drive, Motherboard, Power Supply" data-lang-sw="Tambua kila sehemu kuu: CPU, RAM, Hard Drive, Motherboard, Power Supply">Identify each main component: CPU, RAM, Hard Drive, Motherboard, Power Supply</li>
+                    <li data-lang-en="Write down what you observe about each component's location and appearance" data-lang-sw="Andika kile ulichoona kuhusu mahali na muonekano wa kila sehemu">Write down what you observe about each component's location and appearance</li>
+                    <li data-lang-en="Compare with your classmates and discuss what you found" data-lang-sw="Linganisha na wanafunzi wako na jadili kile unachokipata">Compare with your classmates and discuss what you found</li>
+                </ol>
+            </div>
+
+            <div style="background: white; padding: 1.5rem; border-radius: 5px;">
+                <h4 style="margin-top: 0; color: #1E40AF;">✅ Expected Outcome:</h4>
+                <p style="margin: 0;" data-lang-en="You should be able to identify at least 5 main hardware components and understand their basic functions" data-lang-sw="Unapaswa kuwa na uwezo wa kutambua angalau sehemu 5 kuu za elektroniki na kuelewa kazi zao za msingi">You should be able to identify at least 5 main hardware components and understand their basic functions</p>
+            </div>
+        </section>
+
+        <!-- ASSESSMENT RUBRIC -->
+        <section style="margin: 3rem 0;">
+            <h2 data-lang-en="Assessment Rubric" data-lang-sw="Kiwango cha Tathmini">Assessment Rubric</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                <thead>
+                    <tr style="background: #1E40AF; color: white;">
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Criteria" data-lang-sw="Kiwango">Criteria</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Excellent" data-lang-sw="Bora sana">Excellent</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Good" data-lang-sw="Nzuri">Good</th>
+                        <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;" data-lang-en="Needs Work" data-lang-sw="Inahitaji Kazi">Needs Work</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;" data-lang-en="Component Knowledge" data-lang-sw="Ujuzi wa Sehemu">Component Knowledge</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Can identify and explain all 8+ components with detail" data-lang-sw="Anaweza kutambua na kueleza sehemu 8+ zote kwa kile kinachohitajika">Can identify and explain all 8+ components with detail</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Can identify 5-7 components with some explanation" data-lang-sw="Anaweza kutambua sehemu 5-7 na maelezo makubwa">Can identify 5-7 components with some explanation</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Can identify fewer than 5 components" data-lang-sw="Anaweza kutambua sehemu ndogo ya 5">Can identify fewer than 5 components</td>
+                    </tr>
+                    <tr style="background: #F5F5F5;">
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;" data-lang-en="Function Understanding" data-lang-sw="Kuelewa Kazi">Function Understanding</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Clearly explains what each component does and how it works" data-lang-sw="Kueleza wazi kile sehemu kila moja inatenda na jinsi inavyofanya kazi">Clearly explains what each component does and how it works</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Explains most functions with minor errors" data-lang-sw="Kueleza kazi nyingi na hitilafu ndogo">Explains most functions with minor errors</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Limited understanding of functions" data-lang-sw="Kuelewa kidogo cha kazi">Limited understanding of functions</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid #ddd; font-weight: 600;" data-lang-en="Practical Work" data-lang-sw="Kazi ya Vitendo">Practical Work</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Safely and accurately identified all components" data-lang-sw="Kwa salama na kwa usahihi kutambua sehemu zote">Safely and accurately identified all components</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Identified most components with minor supervision" data-lang-sw="Kutambua sehemu nyinzi na kuangalia kidogo">Identified most components with minor supervision</td>
+                        <td style="padding: 1rem; border: 1px solid #ddd;" data-lang-en="Needed significant help to complete task" data-lang-sw="Ilihitaji msaada mkubwa kukamilisha kazi">Needed significant help to complete task</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- RESOURCES -->
+        <section style="background: #F5F5F5; padding: 2rem; border-radius: 8px; margin: 3rem 0;">
+            <h2 data-lang-en="Additional Resources" data-lang-sw="Rasilimali za Ziada">Additional Resources</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.8rem 0; border-bottom: 1px solid #ddd;">
+                    <a href="#" style="color: #1E40AF; text-decoration: none; font-weight: 600;">📥 <span data-lang-en="Download: Component Identification Worksheet" data-lang-sw="Pakua: Karatasi ya Kutambua Sehemu">Download: Component Identification Worksheet</span></a>
+                </li>
+                <li style="padding: 0.8rem 0; border-bottom: 1px solid #ddd;">
+                    <a href="#" style="color: #1E40AF; text-decoration: none; font-weight: 600;">🎥 <span data-lang-en="Video: Inside Your Computer (YouTube)" data-lang-sw="Video: Ndani ya Kompyuta Yako (YouTube)">Video: Inside Your Computer (YouTube)</span></a>
+                </li>
+                <li style="padding: 0.8rem 0; border-bottom: 1px solid #ddd;">
+                    <a href="#" style="color: #1E40AF; text-decoration: none; font-weight: 600;">📚 <span data-lang-en="Read: Hardware Specifications Guide" data-lang-sw="Soma: Mwongozo wa Vipimo vya Electronics">Read: Hardware Specifications Guide</span></a>
+                </li>
+                <li style="padding: 0.8rem 0;">
+                    <a href="#" style="color: #1E40AF; text-decoration: none; font-weight: 600;">🛠️ <span data-lang-en="Tool: Online CPU/RAM Specs Checker" data-lang-sw="Zana: Kichekuzi cha CPU/RAM Specs Online">Tool: Online CPU/RAM Specs Checker</span></a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== CHAPTER SELECTOR ===== -->
+        <div style="margin: 4rem 0 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
+            <h3 style="text-align: center; color: #1E40AF; margin-top: 0;">
+                <span class="lang-en">Quick Jump to Any Chapter</span>
+                <span class="lang-sw" style="display: none;">Kuruka Haraka kwa Sura Yoyote</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 1.5rem;">
+                <a href="1.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 1</a>
+                <a href="2.html" style="background: #1E40AF; color: white; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 2</a>
+                <a href="3.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 3</a>
+                <a href="4.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 4</a>
+                <a href="5.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 5</a>
+                <a href="6.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 6</a>
+                <a href="7.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 7</a>
+                <a href="8.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 8</a>
+                <a href="9.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 9</a>
+                <a href="10.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 10</a>
+                <a href="11.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 11</a>
+                <a href="12.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 12</a>
+                <a href="13.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 13</a>
+                <a href="14.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 14</a>
+                <a href="15.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 15</a>
+                <a href="16.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 16</a>
+                <a href="17.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 17</a>
+                <a href="18.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 18</a>
+                <a href="19.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 19</a>
+                <a href="20.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 20</a>
+                <a href="21.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 21</a>
+                <a href="22.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 22</a>
+                <a href="23.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 23</a>
+                <a href="24.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 24</a>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 3rem 0; padding-top: 2rem; border-top: 2px solid #ddd;">
+            <a href="1.html" style="background: #24A148; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 600;">← <span data-lang-en="Chapter 1" data-lang-sw="Sura 1">Chapter 1</span></a>
+            <div style="text-align: center;">
+                <div style="font-weight: 600; color: #666;">
+                    <span data-lang-en="Chapter 2 of 24" data-lang-sw="Sura 2 kati ya 24">Chapter 2 of 24</span>
+                </div>
+            </div>
+            <a href="3.html" style="background: #1E40AF; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 600;"><span data-lang-en="Chapter 3" data-lang-sw="Sura 3">Chapter 3</span> →</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="background: #1F2937; color: white; padding: 3rem 0 1rem; margin-top: 5rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <h4 style="margin-top: 0;" data-lang-en="About This Course" data-lang-sw="Kuhusu Kozi Hii">About This Course</h4>
+                    <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;" data-lang-en="A comprehensive vocational training program for computer literacy in Tanzania, aligned with VETA and NACTVET standards." data-lang-sw="Programu kamili ya mafunzo ya vitendo kwa ujifunzaji wa kompyuta nchini Tanzania, inayolingana na kiwango cha VETA na NACTVET.">A comprehensive vocational training program for computer literacy in Tanzania, aligned with VETA and NACTVET standards.</p>
+                </div>
+                <div>
+                    <h4 style="margin-top: 0;" data-lang-en="Quick Links" data-lang-sw="Kiungo Haraka">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="../index_en.html" style="color: #93C5FD; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #93C5FD; text-decoration: none;" data-lang-en="About" data-lang-sw="Kuhusu">About</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #93C5FD; text-decoration: none;" data-lang-en="Contact" data-lang-sw="Wasiliana">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-top: 0;" data-lang-en="VETA/NACTVET" data-lang-sw="VETA/NACTVET">VETA/NACTVET</h4>
+                    <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;" data-lang-en="This course meets the standards set by the Vocational Education and Training Authority (VETA) and National Council for Technical Education in Tanzania." data-lang-sw="Kozi hii inakutana na viwango vilivyowekwa na Vocational Education and Training Authority (VETA) na National Council for Technical Education nchini Tanzania.">This course meets the standards set by the Vocational Education and Training Authority (VETA) and National Council for Technical Education in Tanzania.</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; text-align: center; opacity: 0.8;">
+                <p style="margin: 0; font-size: 0.9rem;">&copy; 2024 Jifunze Computer KWA URAHISI. All rights reserved. | <a href="#" style="color: #93C5FD; text-decoration: none;"><span data-lang-en="Kiswahili" data-lang-sw="English">Kiswahili</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Language Toggle
+        function setupLanguageToggle() {
+            const btn = document.getElementById('languageToggle');
+            const currentLang = localStorage.getItem('language') || 'en';
+            updateLanguage(currentLang);
+            
+            btn.addEventListener('click', function() {
+                const newLang = currentLang === 'en' ? 'sw' : 'en';
+                localStorage.setItem('language', newLang);
+                updateLanguage(newLang);
+                location.reload();
+            });
+        }
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang-en]').forEach(el => {
+                if (lang === 'en') {
+                    el.textContent = el.getAttribute('data-lang-en');
+                } else {
+                    el.textContent = el.getAttribute('data-lang-sw');
+                }
+            });
+
+            const btn = document.getElementById('languageToggle');
+            if (btn) {
+                btn.textContent = lang === 'en' ? 'Kiswahili' : 'English';
+            }
+        }
+
+        function toggleAnswer(btn) {
+            const answer = btn.nextElementSibling;
+            if (answer && answer.classList.contains('answer')) {
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+                btn.textContent = answer.style.display === 'none' ? 'Show Answer' : 'Hide Answer';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', setupLanguageToggle);
+    </script>
+</body>
+</html>
+

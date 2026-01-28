@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vocational training book - Learn Computers Easily (Jifunze Computer Kwa Urahisi)">
+    <meta name="author" content="VETA/NACTVET Aligned Training">
+    
+    <title data-lang-en="Computer Fundamentals - Learn Computers Easily" data-lang-sw="Misingi ya Kompyuta - Jifunze Computer Kwa Urahisi">Computer Fundamentals - Learn Computers Easily</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index_en.html">
+                <span data-lang-en="🖥️ Jifunze Computer KWA URAHISI" data-lang-sw="🖥️ Jifunze Computer KWA URAHISI">🖥️ Jifunze Computer KWA URAHISI</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index_en.html" data-lang-en="Home" data-lang-sw="Nyumbani">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-lang-en="Table of Contents" data-lang-sw="Muhtasari wa Matukio">Table of Contents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="printBtn" href="#" data-lang-en="Print" data-lang-sw="Chapisha">Print</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="downloadBtn" href="#" data-lang-en="Download PDF" data-lang-sw="Pakua PDF">Download PDF</a>
+                    </li>
+                </ul>
+                
+                <!-- Language Selector -->
+                <div class="lang-selector ms-3">
+                    <a href="#" class="active" data-lang="en" data-lang-en="English" data-lang-sw="English">English</a>
+                    <a href="#" data-lang="sw" data-lang-en="Kiswahili" data-lang-sw="Kiswahili">Kiswahili</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="chapter-container">
+        
+        <!-- ===== CHAPTER HEADER ===== -->
+        <div class="chapter-header">
+            <h1 data-lang-en="Chapter 1: Computer Fundamentals" data-lang-sw="Sura 1: Misingi ya Kompyuta">Chapter 1: Computer Fundamentals</h1>
+            
+            <div class="chapter-meta">
+                <span>
+                    <strong data-lang-en="Duration:" data-lang-sw="Muda:">Duration:</strong>
+                    <span data-lang-en="6 hours (2 weeks)" data-lang-sw="Saa 6 (Wiki 2)">6 hours (2 weeks)</span>
+                </span>
+                <span>
+                    <strong data-lang-en="Level:" data-lang-sw="Kiwango:">Level:</strong>
+                    <span data-lang-en="NQF Level 2-3" data-lang-sw="NQF Level 2-3">NQF Level 2-3</span>
+                </span>
+                <span>
+                    <strong data-lang-en="Credit Units:" data-lang-sw="Vitengo vya Mkakati:">Credit Units:</strong>
+                    <span data-lang-en="2 units" data-lang-sw="Vitengo 2">2 units</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- ===== LEARNING OUTCOMES ===== -->
+        <div class="learning-outcomes">
+            <h3 data-lang-en="Learning Outcomes" data-lang-sw="Matokeo ya Kujifunza">Learning Outcomes</h3>
+            <p data-lang-en="By the end of this chapter, you will be able to:" data-lang-sw="Mwisho wa sura hii, utakuwa na uwezo wa:">By the end of this chapter, you will be able to:</p>
+            <ul>
+                <li data-lang-en="Define what a computer is and explain its purpose" data-lang-sw="Kufafanua ni nini kompyuta na kueleza madhumuni yake">Define what a computer is and explain its purpose</li>
+                <li data-lang-en="Identify and describe the main components of a computer system" data-lang-sw="Kutambua na kueleza sehemu kuu za mfumo wa kompyuta">Identify and describe the main components of a computer system</li>
+                <li data-lang-en="Understand the relationship between hardware, software, and users" data-lang-sw="Kuelewa uhusiano kati ya sehemu za juzuu, programu, na watumiaji">Understand the relationship between hardware, software, and users</li>
+                <li data-lang-en="Recognize different types of computers and their uses" data-lang-sw="Kutambua aina tofauti za kompyuta na matumizi yake">Recognize different types of computers and their uses</li>
+                <li data-lang-en="Explain the basic functioning of a computer (input, process, output)" data-lang-sw="Kueleza utendaji wa msingi wa kompyuta (kuweka, kusindika, kutoa)">Explain the basic functioning of a computer (input, process, output)</li>
+            </ul>
+        </div>
+
+        <!-- ===== KEY CONCEPTS & GLOSSARY ===== -->
+        <div class="key-concepts">
+            <h3 data-lang-en="Key Concepts & Glossary" data-lang-sw="Mawazo Makuu na Kamusi">Key Concepts & Glossary</h3>
+            
+            <div class="glossary-term">
+                <strong data-lang-en="Computer" data-lang-sw="Kompyuta">Computer</strong>
+                <span class="en" style="display: block; color: #6B7280; font-style: italic;">An electronic device that processes data according to a set of instructions to produce information.</span>
+                <span class="sw" style="display: none; color: #6B7280; font-style: italic;">Gadget ya kielektroniki inayosindika data kulingana na seti ya maelezo ili kutengeneza taarifa.</span>
+            </div>
+
+            <div class="glossary-term">
+                <strong data-lang-en="Hardware" data-lang-sw="Sehemu za Juzuu">Hardware</strong>
+                <span class="en" style="display: block; color: #6B7280; font-style: italic;">The physical components of a computer that you can touch - keyboard, monitor, processor, etc.</span>
+                <span class="sw" style="display: none; color: #6B7280; font-style: italic;">Sehemu halisi za kompyuta ambazo unaweza kugusa - kibodi, skrini, kigeuzi, nk.</span>
+            </div>
+
+            <div class="glossary-term">
+                <strong data-lang-en="Software" data-lang-sw="Programu">Software</strong>
+                <span class="en" style="display: block; color: #6B7280; font-style: italic;">Computer programs and operating systems that control how a computer works.</span>
+                <span class="sw" style="display: none; color: #6B7280; font-style: italic;">Programu za kompyuta na mifumo ya uendeshaji inayobaweza jinsi kompyuta inavyofanya kazi.</span>
+            </div>
+
+            <div class="glossary-term">
+                <strong data-lang-en="CPU (Central Processing Unit)" data-lang-sw="CPU (Kigeuzi Kuu cha Kuhesabu)">CPU (Central Processing Unit)</strong>
+                <span class="en" style="display: block; color: #6B7280; font-style: italic;">The 'brain' of the computer that performs calculations and controls all operations.</span>
+                <span class="sw" style="display: none; color: #6B7280; font-style: italic;">'Ubongo' wa kompyuta unaofanya mahesabu na kubaweza utendaji wote.</span>
+            </div>
+
+            <div class="glossary-term">
+                <strong data-lang-en="RAM (Random Access Memory)" data-lang-sw="RAM (Kumbukumbu ya Upatikanaji wa Nasibu)">RAM (Random Access Memory)</strong>
+                <span class="en" style="display: block; color: #6B7280; font-style: italic;">Temporary memory that the computer uses while it's working. It's erased when you turn off the computer.</span>
+                <span class="sw" style="display: none; color: #6B7280; font-style: italic;">Kumbukumbu ya kawaida ambayo kompyuta inatumia wakati inafanya kazi. Inafutwa unapozima kompyuta.</span>
+            </div>
+        </div>
+
+        <!-- ===== SECTION 1: INTRODUCTION ===== -->
+        <div class="content-section">
+            <h3 data-lang-en="1.1 What is a Computer?" data-lang-sw="1.1 Kompyuta ni Nini?">1.1 What is a Computer?</h3>
+            
+            <p class="lang-en" style="display: block;">
+                A <strong>computer</strong> is an electronic device that accepts data as input, processes it according to a set of instructions (program), and produces information as output. Computers are designed to help us solve problems, store information, communicate, and create various types of content quickly and efficiently.
+            </p>
+            
+            <p class="lang-sw" style="display: none;">
+                <strong>Kompyuta</strong> ni gadget ya kielektroniki inayokubali data kama pembejeo, inaisindika kulingana na seti ya maelezo (programu), na inatoa taarifa kama matokeo. Kompyuta zimeundwa kusaidia kutatua matatizo, kukamatia taarifa, kuwasiliana, na kutengeneza aina tofauti za maudhui haraka na kwa ufanisi.
+            </p>
+
+            <div class="important">
+                <p class="lang-en" style="display: block; margin: 0;">
+                    <strong>Why learn about computers?</strong> In today's world, computers are everywhere - in schools, offices, hospitals, shops, and homes. Understanding how computers work is essential for almost every job, whether you want to be a teacher, nurse, businessperson, or engineer.
+                </p>
+                <p class="lang-sw" style="display: none; margin: 0;">
+                    <strong>Kwa nini kujifunza kuhusu kompyuta?</strong> Ulimwenguni wa leo, kompyuta zipo mahali - shuleni, ofisini, hospitalini, dukani, na nyumbani. Kuelewa jinsi kompyuta zinavyofanya kazi ni muhimu kwa karibu kila kazi, iwe ni kuwa mwalimu, mkunga, mfanyabiashara, au injinia.
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== SECTION 2: MAIN COMPONENTS ===== -->
+        <div class="content-section">
+            <h3 data-lang-en="1.2 Main Components of a Computer" data-lang-sw="1.2 Sehemu Kuu za Kompyuta">1.2 Main Components of a Computer</h3>
+            
+            <p class="lang-en" style="display: block;">
+                A computer system has three main parts: <strong>Hardware</strong>, <strong>Software</strong>, and <strong>User Interface</strong>. Understanding each part helps you know how a computer works.
+            </p>
+            <p class="lang-sw" style="display: none;">
+                Mfumo wa kompyuta una sehemu tatu kuu: <strong>Sehemu za Juzuu</strong>, <strong>Programu</strong>, na <strong>Interface ya Watumiaji</strong>. Kuelewa kila sehemu kunakusaidia kujua jinsi kompyuta inavyofanya kazi.
+            </p>
+
+            <!-- HARDWARE -->
+            <h4 data-lang-en="Hardware - The Physical Parts" data-lang-sw="Sehemu za Juzuu - Sehemu Halisi">Hardware - The Physical Parts</h4>
+            <p class="lang-en" style="display: block;">
+                Hardware includes all the physical parts of a computer that you can touch and see. The main hardware components are:
+            </p>
+            <p class="lang-sw" style="display: none;">
+                Sehemu za juzuu ni sehemu halisi za kompyuta ambazo unaweza kugusa na kuona. Sehemu kuu za juzuu ni:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th data-lang-en="Component" data-lang-sw="Sehemu">Component</th>
+                        <th data-lang-en="Description (English)" data-lang-sw="Maelezo (Kiingereza)">Description (English)</th>
+                        <th data-lang-en="Description (Swahili)" data-lang-sw="Maelezo (Kiswahili)">Description (Swahili)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CPU (Processor)</strong></td>
+                        <td>The brain of the computer. It performs all calculations and controls everything</td>
+                        <td>Ubongo wa kompyuta. Inafanya mahesabu yote na kubaweza kila kitu</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RAM</strong></td>
+                        <td>Temporary memory for running programs. Erased when computer is turned off</td>
+                        <td>Kumbukumbu ya kawaida kwa kuendesha programu. Inafutwa unapozima kompyuta</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hard Drive</strong></td>
+                        <td>Permanent storage for files, programs, and data. Keeps information even when off</td>
+                        <td>Kumbukumbu ya kudumu kwa faili, programu, na data. Inahifadhi taarifa hata unapozima</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Motherboard</strong></td>
+                        <td>Main circuit board connecting all components. Like the nervous system of the computer</td>
+                        <td>Ubao kuu linajiunganisha sehemu zote. Kama mfumo wa neva wa kompyuta</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Power Supply</strong></td>
+                        <td>Provides electrical power to all components so they can work</td>
+                        <td>Inatoa umeme kwa sehemu zote ili ziweze kufanya kazi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Keyboard</strong></td>
+                        <td>Input device used to type letters, numbers, and commands into the computer</td>
+                        <td>Gadget ya kuweka data inayotumiwa kuandika herufi, namba, na amri katika kompyuta</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mouse</strong></td>
+                        <td>Pointing device that helps you navigate and click on items on the screen</td>
+                        <td>Gadget ya kuonyesha inakusaidia kusogeza na kubofya vipengee kwenye skrini</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monitor</strong></td>
+                        <td>Output device that displays the computer's information on a screen</td>
+                        <td>Gadget ya kutoa inayoonyesha taarifa ya kompyuta kwenye skrini</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- SCREENSHOT -->
+            <div class="screenshot">
+                <figure>
+                    <img src="../assets/images/computer-components.png" alt="Main Computer Components Diagram">
+                    <figcaption data-lang-en="Figure 1.1: Main Components of a Desktop Computer" data-lang-sw="Kielelezo 1.1: Sehemu Kuu za Kompyuta ya Kawaida">Figure 1.1: Main Components of a Desktop Computer</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- ===== SECTION 3: HOW COMPUTERS WORK ===== -->
+        <div class="content-section">
+            <h3 data-lang-en="1.3 How Computers Work: Input-Process-Output" data-lang-sw="1.3 Jinsi Kompyuta Zinavyofanya Kazi: Kuweka-Kusindika-Kutoa">1.3 How Computers Work: Input-Process-Output</h3>
+            
+            <p class="lang-en" style="display: block;">
+                Every computer operates in a cycle that includes three main steps:
+            </p>
+            <p class="lang-sw" style="display: none;">
+                Kila kompyuta inafanya kazi katika mzunguko unaojumuisha hatua tatu kuu:
+            </p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4 data-lang-en="INPUT" data-lang-sw="KUWEKA">INPUT</h4>
+                        <p class="lang-en" style="display: block;">Data enters the computer through input devices like keyboard, mouse, scanner, or microphone. This is the information you give the computer.</p>
+                        <p class="lang-sw" style="display: none;">Data inaingia katika kompyuta kupitia gadgets za kuweka data kama kibodi, panya, skana, au mikrofoni. Hii ni taarifa unayoipa kompyuta.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4 data-lang-en="PROCESS" data-lang-sw="KUSINDIKA">PROCESS</h4>
+                        <p class="lang-en" style="display: block;">The CPU (processor) takes the input data and performs calculations or operations on it according to the program's instructions. This is like the computer thinking about what to do.</p>
+                        <p class="lang-sw" style="display: none;">CPU (kigeuzi) inachukua data ya kuweka na kufanya mahesabu au uendeshaji juu yake kulingana na maelezo ya programu. Hii ni kama kompyuta inakufikiri ni nini cha kufanya.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4 data-lang-en="OUTPUT" data-lang-sw="KUTOA">OUTPUT</h4>
+                        <p class="lang-en" style="display: block;">The computer displays the results through output devices like monitor, printer, or speakers. This is the information the computer gives back to you.</p>
+                        <p class="lang-sw" style="display: none;">Kompyuta inaonyesha matokeo kupitia gadgets za kutoa kama skrini, printa, au spika. Hii ni taarifa ambayo kompyuta inakupatia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXAMPLE -->
+            <div class="tip">
+                <p class="lang-en" style="display: block; margin: 0;">
+                    <strong>Example:</strong> When you use a computer to calculate 10 + 5:
+                    <br>✓ INPUT: You type "10 + 5" using the keyboard
+                    <br>✓ PROCESS: The computer calculates the result
+                    <br>✓ OUTPUT: The monitor shows "15"
+                </p>
+                <p class="lang-sw" style="display: none; margin: 0;">
+                    <strong>Mfano:</strong> Unapotumia kompyuta kuhesabu 10 + 5:
+                    <br>✓ KUWEKA: Unaandika "10 + 5" kwa kibodi
+                    <br>✓ KUSINDIKA: Kompyuta inakokotoa matokeo
+                    <br>✓ KUTOA: Skrini inaonyesha "15"
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== TYPES OF COMPUTERS ===== -->
+        <div class="content-section">
+            <h3 data-lang-en="1.4 Types of Computers" data-lang-sw="1.4 Aina za Kompyuta">1.4 Types of Computers</h3>
+            
+            <p class="lang-en" style="display: block;">Computers come in different sizes and shapes, each designed for specific purposes:</p>
+            <p class="lang-sw" style="display: none;">Kompyuta zimekuja katika ukubwa na maumbo tofauti, kila moja imeundwa kwa madhumuni maalum:</p>
+
+            <div class="bilingual">
+                <div class="bilingual-section lang-en" style="display: block;">
+                    <h4>Desktop Computer</h4>
+                    <p>A personal computer designed to sit on a desk. It includes a separate monitor, keyboard, and mouse. Common in homes and offices.</p>
+                </div>
+                <div class="bilingual-section lang-sw" style="display: none;">
+                    <h4>Kompyuta ya Kawaida</h4>
+                    <p>Kompyuta binafsi iliyoundwa kusimama juu ya meza. Inajumuisha skrini, kibodi, na panya tofauti. Kawaida katika nyumbani na ofisini.</p>
+                </div>
+            </div>
+
+            <div class="bilingual">
+                <div class="bilingual-section lang-en" style="display: block;">
+                    <h4>Laptop/Notebook</h4>
+                    <p>A portable computer that combines all components in one portable unit. Easy to carry and use anywhere with a battery.</p>
+                </div>
+                <div class="bilingual-section lang-sw" style="display: none;">
+                    <h4>Kompyuta ya Kubeba</h4>
+                    <p>Kompyuta inayohamishika ambayo inachanganya sehemu zote katika kitengo kimoja. Rahisi kubeba na kutumia mahali popote kwa betri.</p>
+                </div>
+            </div>
+
+            <div class="bilingual">
+                <div class="bilingual-section lang-en" style="display: block;">
+                    <h4>Tablet</h4>
+                    <p>A portable device with a touchscreen. Used for browsing, reading, and light work. Examples: iPad, Android tablets.</p>
+                </div>
+                <div class="bilingual-section lang-sw" style="display: none;">
+                    <h4>Taibuleti</h4>
+                    <p>Gadget inayohamishika na skrini ya kugusa. Inatumika kwa kutafuta, kusoma, na kazi ya mwanga. Mifano: iPad, taibuleti za Android.</p>
+                </div>
+            </div>
+
+            <div class="bilingual">
+                <div class="bilingual-section lang-en" style="display: block;">
+                    <h4>Smartphone</h4>
+                    <p>A pocket-sized computer in your hand. Used for calling, messaging, internet browsing, and many other tasks.</p>
+                </div>
+                <div class="bilingual-section lang-sw" style="display: none;">
+                    <h4>Simu Mahiri</h4>
+                    <p>Kompyuta ndogo katika mkono wako. Inatumika kwa kupiga simu, kutumia ujumbe, kutafuta intaneti, na kazi nyingine nyingi.</p>
+                </div>
+            </div>
+
+            <div class="bilingual">
+                <div class="bilingual-section lang-en" style="display: block;">
+                    <h4>Server</h4>
+                    <p>A powerful computer that stores and manages data for multiple users. Used in companies and organizations to share information.</p>
+                </div>
+                <div class="bilingual-section lang-sw" style="display: none;">
+                    <h4>Serivaa</h4>
+                    <p>Kompyuta yenye nguvu inayohifadhi na kusimamia data kwa watumiaji wengi. Inatumika katika kampuni na shirikisho kusambaza taarifa.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== SUMMARY BOX ===== -->
+        <div class="summary-box">
+            <h3 data-lang-en="Chapter Summary" data-lang-sw="Muhtasari wa Sura">Chapter Summary</h3>
+            <ul class="lang-en" style="display: block;">
+                <li><strong>Computer:</strong> An electronic device that accepts data, processes it, and produces information</li>
+                <li><strong>Main Components:</strong> Hardware (physical parts), Software (programs), and Users</li>
+                <li><strong>How it Works:</strong> Input → Process → Output cycle</li>
+                <li><strong>Hardware includes:</strong> CPU, RAM, Hard Drive, Keyboard, Mouse, Monitor, and more</li>
+                <li><strong>Types of Computers:</strong> Desktop, Laptop, Tablet, Smartphone, and Server</li>
+                <li><strong>Importance:</strong> Computers are essential tools in modern society for work, education, and communication</li>
+            </ul>
+            
+            <ul class="lang-sw" style="display: none;">
+                <li><strong>Kompyuta:</strong> Gadget ya kielektroniki inayokubali data, inaisindika, na inatoa taarifa</li>
+                <li><strong>Sehemu Kuu:</strong> Sehemu za juzuu (sehemu halisi), Programu (programu), na Watumiaji</li>
+                <li><strong>Jinsi Iinavyofanya Kazi:</strong> Kuweka → Kusindika → Kutoa mzunguko</li>
+                <li><strong>Sehemu za juzuu zinajumuisha:</strong> CPU, RAM, Hifadhi ya Diski, Kibodi, Panya, Skrini, na zaidi</li>
+                <li><strong>Aina za Kompyuta:</strong> Kawaida, Kubeba, Taibuleti, Simu Mahiri, na Serivaa</li>
+                <li><strong>Umuhimu:</strong> Kompyuta ni vyombo muhimu katika jamii ya kisasa kwa ajili ya kazi, elimu, na mawasiliano</li>
+            </ul>
+        </div>
+
+        <!-- ===== SELF-CHECK QUESTIONS ===== -->
+        <div class="self-check">
+            <h3 data-lang-en="Self-Check Questions" data-lang-sw="Maswali ya Kujichunguza">Self-Check Questions</h3>
+            <p class="lang-en" style="display: block;">
+                <em data-lang-en="Check your understanding by answering these questions. Click 'Show Answers' to see the answers." data-lang-sw="Jichunguze kwa kujibu maswali haya. Bofya 'Onyesha Majibu' kuona majibu.">Check your understanding by answering these questions. Click 'Show Answers' to see the answers.</em>
+            </p>
+            <p class="lang-sw" style="display: none;">
+                <em>Jichunguze kwa kujibu maswali haya. Bofya 'Onyesha Majibu' kuona majibu.</em>
+            </p>
+
+            <div class="question">
+                <div class="question-text" data-lang-en="1. What is the main function of the CPU?" data-lang-sw="1. Ni nini kazi kuu ya CPU?">1. What is the main function of the CPU?</div>
+                <div class="question-type" data-lang-en="Multiple Choice" data-lang-sw="Chaguo Nyingi">Multiple Choice</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q1" value="a" id="q1a">
+                        <label for="q1a" class="lang-en">a) To display information on screen</label>
+                        <label for="q1a" class="lang-sw" style="display: none;">a) Kuonyesha taarifa kwenye skrini</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="b" id="q1b">
+                        <label for="q1b" class="lang-en">b) To perform calculations and control all operations</label>
+                        <label for="q1b" class="lang-sw" style="display: none;">b) Kufanya mahesabu na kubaweza utendaji wote</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="c" id="q1c">
+                        <label for="q1c" class="lang-en">c) To store data permanently</label>
+                        <label for="q1c" class="lang-sw" style="display: none;">c) Kukamatia data kudumu</label>
+                    </div>
+                </div>
+                <div class="answer" style="display: none; margin-top: 1rem; padding: 1rem; background-color: #ECFDF5; border-left: 3px solid #10B981;">
+                    <strong class="lang-en">Answer: b</strong>
+                    <strong class="lang-sw" style="display: none;">Jibu: b</strong>
+                    <p class="lang-en">The CPU is the 'brain' of the computer. It performs all calculations and controls everything that happens in the computer.</p>
+                    <p class="lang-sw" style="display: none;">CPU ni 'ubongo' wa kompyuta. Inafanya mahesabu yote na kubaweza kila kitu kinachofanyika katika kompyuta.</p>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text" data-lang-en="2. What does RAM stand for?" data-lang-sw="2. RAM inamaanisha nini?">2. What does RAM stand for?</div>
+                <div class="question-type" data-lang-en="Short Answer" data-lang-sw="Jibu Fupi">Short Answer</div>
+                <input type="text" class="form-control" placeholder="Your answer here">
+                <div class="answer" style="display: none; margin-top: 1rem; padding: 1rem; background-color: #ECFDF5; border-left: 3px solid #10B981;">
+                    <strong class="lang-en">Answer:</strong>
+                    <strong class="lang-sw" style="display: none;">Jibu:</strong>
+                    <p class="lang-en">RAM stands for <strong>Random Access Memory</strong>. It is temporary memory used while the computer is running.</p>
+                    <p class="lang-sw" style="display: none;">RAM inamaanisha <strong>Kumbukumbu ya Upatikanaji wa Nasibu</strong>. Ni kumbukumbu ya kawaida inayotumiwa wakati kompyuta inaendeshwa.</p>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="question-text" data-lang-en="3. True or False: A smartphone is a type of computer." data-lang-sw="3. Kweli au Uongo: Simu mahiri ni aina ya kompyuta.">3. True or False: A smartphone is a type of computer.</div>
+                <div class="question-type" data-lang-en="True/False" data-lang-sw="Kweli/Uongo">True/False</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q3" value="true" id="q3true">
+                        <label for="q3true" class="lang-en">True - Smartphones are small computers</label>
+                        <label for="q3true" class="lang-sw" style="display: none;">Kweli - Simu mahiri ni kompyuta ndogo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="false" id="q3false">
+                        <label for="q3false" class="lang-en">False - Smartphones are not computers</label>
+                        <label for="q3false" class="lang-sw" style="display: none;">Uongo - Simu mahiri si kompyuta</label>
+                    </div>
+                </div>
+                <div class="answer" style="display: none; margin-top: 1rem; padding: 1rem; background-color: #ECFDF5; border-left: 3px solid #10B981;">
+                    <strong class="lang-en">Answer: True</strong>
+                    <strong class="lang-sw" style="display: none;">Jibu: Kweli</strong>
+                    <p class="lang-en">Yes! Smartphones are pocket-sized computers with processors, memory, and software, just like desktop computers but in a smaller form.</p>
+                    <p class="lang-sw" style="display: none;">Ndiyo! Simu mahiri ni kompyuta ndogo zenye wageuzi, kumbukumbu, na programu, kama vile kompyuta za kawaida lakini katika muundo mdogo.</p>
+                </div>
+            </div>
+
+            <button class="btn btn-secondary" id="showAnswersBtn" data-lang-en="Show Answers" data-lang-sw="Onyesha Majibu">Show Answers</button>
+        </div>
+
+        <!-- ===== PRACTICAL EXERCISE ===== -->
+        <div class="practical-exercise">
+            <h3 data-lang-en="Practical Exercise 1.1: Identify Computer Components" data-lang-sw="Zoezi la Uendelevu 1.1: Tambua Sehemu za Kompyuta">Practical Exercise 1.1: Identify Computer Components</h3>
+
+            <div class="exercise-objective">
+                <strong class="lang-en">OBJECTIVE:</strong>
+                <strong class="lang-sw" style="display: none;">LENGO:</strong>
+                <p class="lang-en" style="display: block; margin: 0.5rem 0;">To identify and correctly label the main components of a computer system</p>
+                <p class="lang-sw" style="display: none; margin: 0.5rem 0;">Kugundua na kubrandisha vigumu sehemu kuu za mfumo wa kompyuta</p>
+            </div>
+
+            <div class="exercise-procedure">
+                <div class="exercise-step lang-en">
+                    <strong>Step 1: Get a computer or look at a diagram of one</strong>
+                    <p>If you have access to a computer, examine it carefully. If not, look at a diagram of a desktop computer.</p>
+                </div>
+                <div class="exercise-step lang-sw" style="display: none;">
+                    <strong>Hatua 1: Pata kompyuta au angalia mchoro wa moja</strong>
+                    <p>Ikiwa una ufahal wa kompyuta, uichunguze kwa makini. Kama la, angalia mchoro wa kompyuta ya kawaida.</p>
+                </div>
+
+                <div class="exercise-step lang-en">
+                    <strong>Step 2: Identify the components</strong>
+                    <p>Locate each of these components:
+                        <ul>
+                            <li>CPU/Processor (usually inside the case)</li>
+                            <li>RAM (inside the case)</li>
+                            <li>Motherboard (inside the case)</li>
+                            <li>Hard Drive (inside the case)</li>
+                            <li>Power Supply (inside the case)</li>
+                            <li>Monitor (outside)</li>
+                            <li>Keyboard (outside)</li>
+                            <li>Mouse (outside)</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="exercise-step lang-sw" style="display: none;">
+                    <strong>Hatua 2: Tambua sehemu</strong>
+                    <p>Tafuta kila moja ya sehemu hizi:
+                        <ul>
+                            <li>CPU/Kigeuzi (kawaida ndani ya kesi)</li>
+                            <li>RAM (ndani ya kesi)</li>
+                            <li>Ubao wa Umeme (ndani ya kesi)</li>
+                            <li>Hifadhi ya Diski (ndani ya kesi)</li>
+                            <li>Chanzo cha Umeme (ndani ya kesi)</li>
+                            <li>Skrini (nje)</li>
+                            <li>Kibodi (nje)</li>
+                            <li>Panya (nje)</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="exercise-step lang-en">
+                    <strong>Step 3: Label a diagram</strong>
+                    <p>Draw a simple diagram of a desktop computer and label all the main components. Use the glossary terms you learned in this chapter.</p>
+                </div>
+                <div class="exercise-step lang-sw" style="display: none;">
+                    <strong>Hatua 3: Brandisha mchoro</strong>
+                    <p>Chora mchoro rahisi wa kompyuta ya kawaida na ubrandishe sehemu zote kuu. Tumia neno la kamusi ulilojifunza katika sura hii.</p>
+                </div>
+
+                <div class="exercise-step lang-en">
+                    <strong>Step 4: Write short descriptions</strong>
+                    <p>For each component, write 1-2 sentences explaining its purpose and what it does.</p>
+                </div>
+                <div class="exercise-step lang-sw" style="display: none;">
+                    <strong>Hatua 4: Andika maelezo mafupi</strong>
+                    <p>Kwa kila sehemu, andika sentensi 1-2 zikieleza madhumuni yake na kile kinachofanya.</p>
+                </div>
+            </div>
+
+            <div class="expected-outcome">
+                <strong class="lang-en">EXPECTED OUTCOME:</strong>
+                <strong class="lang-sw" style="display: none;">MATOKEO YANAYOTAKA:</strong>
+                <p class="lang-en" style="display: block; margin: 0.5rem 0;">
+                    You should be able to identify at least 8 main components of a computer and explain their basic functions. Your diagram should be clearly labeled and your descriptions should show understanding of each component's role.
+                </p>
+                <p class="lang-sw" style="display: none; margin: 0.5rem 0;">
+                    Utakuwa umepata kugundua angalau sehemu 8 kuu za kompyuta na kueleza kazi zake za msingi. Mchoro wako unapaswa kuwa na alama wazi na maelezo yako yapaswa kuonyesha uelewa wa jukumu la kila sehemu.
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== ASSESSMENT ===== -->
+        <div class="assessment">
+            <h3 data-lang-en="Chapter Assessment" data-lang-sw="Tathmini ya Sura">Chapter Assessment</h3>
+            <p class="lang-en" style="display: block;">
+                <strong>Assessment Strategy for Chapter 1:</strong> This chapter uses a mixed assessment approach:
+                <ul>
+                    <li><strong>Knowledge (30%):</strong> Self-check questions test understanding of concepts</li>
+                    <li><strong>Application (40%):</strong> Practical exercise demonstrates ability to identify components</li>
+                    <li><strong>Competency (30%):</strong> Observation of student's ability to explain computer functions</li>
+                </ul>
+            </p>
+            <p class="lang-sw" style="display: none;">
+                <strong>Mkakati wa Tathmini kwa Sura 1:</strong> Sura hii inatumia njia ya tathmini iliyochanganywa:
+                <ul>
+                    <li><strong>Maarifa (30%):</strong> Maswali ya kujichunguza hupima uelewa wa dhana</li>
+                    <li><strong>Matumizi (40%):</strong> Zoezi la uendelevu linaonyesha uwezo wa kugundua sehemu</li>
+                    <li><strong>Ustadi (30%):</strong> Uchunguzi wa uwezo wa mwanafunzi kueleza kazi za kompyuta</li>
+                </ul>
+            </p>
+        </div>
+
+        <!-- ===== RESOURCES ===== -->
+        <div class="resources">
+            <h3 data-lang-en="Additional Resources" data-lang-sw="Rasilimali za Ziada">Additional Resources</h3>
+            <div class="resource-item">
+                <strong class="lang-en">Worksheet 1.1</strong>
+                <strong class="lang-sw" style="display: none;">Karatasi ya Kazi 1.1</strong>
+                <p class="lang-en" style="display: block;">Computer Components Labeling - Practice sheet for identifying parts</p>
+                <p class="lang-sw" style="display: none;">Ubrandishaji wa Sehemu za Kompyuta - Karatasi ya mazoezi ya kugundua sehemu</p>
+                <a href="../downloads/worksheets/worksheet-1-1.pdf" class="btn btn-download">Download PDF</a>
+            </div>
+
+            <div class="resource-item">
+                <strong class="lang-en">Video: Computer Parts Overview</strong>
+                <strong class="lang-sw" style="display: none;">Video: Muhtasari wa Sehemu za Kompyuta</strong>
+                <p class="lang-en" style="display: block;">Visual tutorial showing all main computer components (if available)</p>
+                <p class="lang-sw" style="display: none;">Mafunzo ya video yanayoonyesha sehemu zote kuu za kompyuta (ikiwa zipo)</p>
+                <a href="#" class="btn btn-download">Watch Video</a>
+            </div>
+
+            <div class="resource-item">
+                <strong class="lang-en">Answer Key 1.1</strong>
+                <strong class="lang-sw" style="display: none;">Ufunguo wa Majibu 1.1</strong>
+                <p class="lang-en" style="display: block;">For teachers: Complete answers and marking rubric for all exercises</p>
+                <p class="lang-sw" style="display: none;">Kwa walimu: Majibu kamili na jedwali la kutia alama kwa zoezi lote</p>
+                <a href="../downloads/answer-keys/answer-key-1-1.pdf" class="btn btn-download">Download PDF</a>
+            </div>
+        </div>
+
+        <!-- ===== CHAPTER SELECTOR ===== -->
+        <div style="margin: 4rem 0 3rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
+            <h3 style="text-align: center; color: #1E40AF; margin-top: 0;">
+                <span class="lang-en">Quick Jump to Any Chapter</span>
+                <span class="lang-sw" style="display: none;">Kuruka Haraka kwa Sura Yoyote</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 1.5rem;">
+                <a href="1.html" style="background: #1E40AF; color: white; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 1</a>
+                <a href="2.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 2</a>
+                <a href="3.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 3</a>
+                <a href="4.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 4</a>
+                <a href="5.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 5</a>
+                <a href="6.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 6</a>
+                <a href="7.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 7</a>
+                <a href="8.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 8</a>
+                <a href="9.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 9</a>
+                <a href="10.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 10</a>
+                <a href="11.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 11</a>
+                <a href="12.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 12</a>
+                <a href="13.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 13</a>
+                <a href="14.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 14</a>
+                <a href="15.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 15</a>
+                <a href="16.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 16</a>
+                <a href="17.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 17</a>
+                <a href="18.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 18</a>
+                <a href="19.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 19</a>
+                <a href="20.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 20</a>
+                <a href="21.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 21</a>
+                <a href="22.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 22</a>
+                <a href="23.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 23</a>
+                <a href="24.html" style="background: #e8f0ff; color: #1E40AF; padding: 12px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block;">Ch 24</a>
+            </div>
+        </div>
+
+        <!-- ===== NAVIGATION ===== -->
+        <div class="chapter-nav">
+            <div class="nav-button prev">
+                <a href="#" style="color: var(--dark-text); text-decoration: none;">
+                    <span class="lang-en">← Introduction to Course</span>
+                    <span class="lang-sw" style="display: none;">← Utangamano wa Kozi</span>
+                </a>
+            </div>
+            <div style="text-align: center; font-weight: 600; color: #666;">
+                <span class="lang-en">Chapter 1 of 24</span>
+                <span class="lang-sw" style="display: none;">Sura 1 kati ya 24</span>
+            </div>
+            <div class="nav-button next">
+                <a href="2.html" style="color: white; text-decoration: none;">
+                    <span class="lang-en">Chapter 2: Computer Hardware →</span>
+                    <span class="lang-sw" style="display: none;">Sura 2: Sehemu za Juzuu za Kompyuta →</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>
+            <span class="lang-en">Jifunze Computer KWA URAHISI - Vocational Training for Tanzania (VETA/NACTVET) | 2024</span>
+            <span class="lang-sw" style="display: none;">Jifunze Computer KWA URAHISI - Mafunzo ya Kazi kwa Tanzania (VETA/NACTVET) | 2024</span>
+        </p>
+        <p>
+            <a href="#" class="lang-en">About this Course</a>
+            <a href="#" class="lang-sw" style="display: none;">Kuhusu Kozi Hii</a>
+            | 
+            <a href="#" class="lang-en">Teacher Guide</a>
+            <a href="#" class="lang-sw" style="display: none;">Mwongozo wa Mwalimu</a>
+            | 
+            <a href="#" class="lang-en">Contact Us</a>
+            <a href="#" class="lang-sw" style="display: none;">Wasiliana Nasi</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
+
