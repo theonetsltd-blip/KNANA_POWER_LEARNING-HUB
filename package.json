@@ -1,0 +1,20 @@
+{
+  "name": "knana-learning-hub-automation",
+  "version": "1.0.0",
+  "description": "Automation scripts for KNANA POWER LEARNING HUB chapter management",
+  "type": "module",
+  "scripts": {
+    "create-level2": "node create_level2_chapters.js",
+    "update-chapters": "node update_all_chapters.js",
+    "add-selectors": "node add_chapter_selector.js",
+    "all": "npm run create-level2 && npm run update-chapters && npm run add-selectors"
+  },
+  "keywords": [
+    "education",
+    "automation",
+    "chapters",
+    "learning-management"
+  ],
+  "author": "The One Tech Services",
+  "license": "MIT"
+}

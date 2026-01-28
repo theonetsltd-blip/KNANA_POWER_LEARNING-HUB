@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNANA POWER LEARNING HUB - Learn Computers Easily</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="font-size: 1.4rem;">
+                🖥️ KNANA POWER LEARNING HUB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chapters">Start Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                </ul>
+                <div class="ms-auto" style="margin-left: 2rem; display: flex; gap: 1rem; align-items: center;">
+                    <button id="printBtn" class="btn btn-light btn-sm" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;" title="Print this page">
+                        🖨️ Print
+                    </button>
+                    <button id="pdfBtn" class="btn btn-light btn-sm" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;" title="Download as PDF">
+                        📥 PDF
+                    </button>
+                    <div class="lang-selector" style="display: flex; gap: 0.5rem; align-items: center;">
+                        <a href="index_sw.html" style="color: white; text-decoration: none;">Kiswahili</a>
+                        <span style="color: white;">|</span>
+                        <a href="index_en.html" class="active" style="color: #FFD700; text-decoration: none; font-weight: bold;">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header style="background: linear-gradient(135deg, #0F172A 0%, #1E40AF 50%, #24A148 100%); color: white; padding: 50px 0; position: relative; overflow: hidden;">
+        <!-- Animated background elements -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,215,0,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
+        <div style="position: absolute; bottom: -100px; left: -100px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(36,161,72,0.1) 0%, transparent 70%); border-radius: 50%;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div style="margin-bottom: 0.5rem;">
+                        <span style="display: inline-block; background: #FFD700; color: #1E40AF; padding: 8px 16px; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">🎓 VOCATIONAL TRAINING EXCELLENCE</span>
+                    </div>
+                    <h1 style="font-size: 3rem; font-weight: 800; margin: 0.8rem 0; line-height: 1.15;">
+                        Transform Your <span style="color: #FFD700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Digital Future</span>
+                    </h1>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; opacity: 0.95; max-width: 600px;">
+                        Master practical computer skills designed for the modern workplace. Comprehensive training aligned with VETA & NACTVET standards, delivered at your pace with real-world projects.
+                    </p>
+                    <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                        <a href="#chapters" class="btn" style="background-color: #FFD700; color: #0F172A; padding: 10px 20px; font-weight: 700; border: none; border-radius: 8px; font-size: 0.9rem; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3); transition: all 0.3s; cursor: pointer;">
+                            🚀 Start Learning
+                        </a>
+                        <a href="about.html" class="btn" style="background-color: transparent; color: white; border: 2px solid white; padding: 8px 18px; font-weight: 600; border-radius: 8px; font-size: 0.9rem; transition: all 0.3s;">
+                            📖 Learn More
+                        </a>
+                    </div>
+                    <!-- Quick Stats -->
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                        <div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">44</div>
+                            <div style="font-size: 0.75rem; opacity: 0.9;">Chapters</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">2</div>
+                            <div style="font-size: 0.75rem; opacity: 0.9;">Levels</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">100%</div>
+                            <div style="font-size: 0.75rem; opacity: 0.9;">Practical</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center" style="position: relative; display: none;">
+                    <div style="font-size: 120px; opacity: 0.8; animation: float 3s ease-in-out infinite;">🖥️</div>
+                    <div style="position: absolute; width: 200px; height: 200px; background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%); border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: pulse 3s ease-in-out infinite;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+            }
+            @keyframes pulse {
+                0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.1; }
+                50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.2; }
+            }
+        </style>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about" style="padding: 35px 0; background: #F8F9FA;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <h2 style="font-size: 1.8rem; color: #1E40AF; font-weight: 700; margin-bottom: 0.5rem;">About This Course</h2>
+                <p style="font-size: 0.95rem; color: #666; max-width: 600px; margin: 0 auto;">A professional vocational training program designed to equip you with real computer skills.</p>
+            </div>
+
+            <div class="row" style="margin-bottom: 1.5rem;">
+                <div class="col-md-6 mb-2">
+                    <div style="background: white; padding: 1.2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 5px solid #24A148;">
+                        <h3 style="color: #24A148; font-weight: 700; margin-bottom: 0.6rem; font-size: 1.05rem;">📚 What You'll Learn</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 0.3rem 0; color: #555; font-size: 0.85rem;"><strong>✓</strong> Computer fundamentals & hardware</li>
+                            <li style="padding: 0.3rem 0; color: #555; font-size: 0.85rem;"><strong>✓</strong> Operating systems (Windows, Linux)</li>
+                            <li style="padding: 0.3rem 0; color: #555; font-size: 0.85rem;"><strong>✓</strong> File management & organization</li>
+                            <li style="padding: 0.3rem 0; color: #555; font-size: 0.85rem;"><strong>✓</strong> Internet & email essentials</li>
+                            <li style="padding: 0.3rem 0; color: #555; font-size: 0.85rem;"><strong>✓</strong> Microsoft Office Suite</li>
+                            <li style="padding: 0.3rem 0; color: #555; font-size: 0.85rem;"><strong>✓</strong> Advanced digital skills</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <div style="background: white; padding: 1.2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 5px solid #1E40AF;">
+                        <h3 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.6rem; font-size: 1.05rem;">🎯 Program Details</h3>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div>
+                                <p style="color: #999; font-size: 0.8rem; margin: 0;">Duration</p>
+                                <p style="color: #333; font-weight: 600; font-size: 0.9rem; margin: 0.2rem 0;">1 Academic Year</p>
+                            </div>
+                            <div>
+                                <p style="color: #999; font-size: 0.8rem; margin: 0;">Contact Hours</p>
+                                <p style="color: #333; font-weight: 600; font-size: 0.9rem; margin: 0.2rem 0;">150 Hours (3 periods/week)</p>
+                            </div>
+                            <div>
+                                <p style="color: #999; font-size: 0.8rem; margin: 0;">Level</p>
+                                <p style="color: #333; font-weight: 600; font-size: 0.9rem; margin: 0.2rem 0;">NQF Level 2-3 Vocational</p>
+                            </div>
+                            <div>
+                                <p style="color: #999; font-size: 0.8rem; margin: 0;">Assessment</p>
+                                <p style="color: #333; font-weight: 600; font-size: 0.9rem; margin: 0.2rem 0;">40% Practical • 30% Projects • 30% Exams</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Levels Section -->
+    <section style="padding: 40px 0; background: linear-gradient(135deg, #E3F2FD 0%, #F0F4C3 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 1.8rem; color: #1E40AF; font-weight: 700; margin-bottom: 0.5rem;">Choose Your Learning Level</h2>
+                <p style="font-size: 0.95rem; color: #666;">Select your proficiency level and start your journey</p>
+            </div>
+
+            <div class="row" style="margin-bottom: 1.5rem;">
+                <!-- Level 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(30, 64, 175, 0.15); transition: all 0.3s ease; border: 3px solid #1E40AF;">
+                        <!-- Book Cover Image -->
+                        <div style="background: white; padding: 0.5rem; height: auto; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
+                            <img src="assets/images/Basic Computer Knowledge eng and sw level i.PNG" alt="Level 1 Book Cover" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; transition: transform 0.3s ease;">
+                        </div>
+                        <div style="padding: 0.8rem;">
+                            <div style="background: #F8F9FA; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.6rem;">
+                                <p style="margin: 0; color: #666; font-size: 0.8rem;"><strong>NQF Level:</strong> 2-3 (Foundation)</p>
+                                <p style="margin: 0.2rem 0 0 0; color: #666; font-size: 0.8rem;"><strong>Duration:</strong> 150 hrs</p>
+                                <p style="margin: 0.2rem 0 0 0; color: #666; font-size: 0.8rem;"><strong>Chapters:</strong> 24</p>
+                            </div>
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.3rem; font-size: 0.9rem;">What You'll Learn:</h5>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0.8rem;">
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Computer fundamentals & hardware</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Operating system basics</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ File management</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Internet & email basics</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Microsoft Office</li>
+                            </ul>
+                            <a href="chapters_level1.html" class="btn" style="background: #1E40AF; color: white; padding: 6px 12px; border: none; border-radius: 6px; font-weight: 600; width: 100%; text-decoration: none; display: block; text-align: center; font-size: 0.8rem;">
+                                View Level 1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(193, 24, 91, 0.15); transition: all 0.3s ease; border: 3px solid #C2185B;">
+                        <!-- Book Cover Image -->
+                        <div style="background: white; padding: 0.5rem; height: auto; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative;">
+                            <img src="assets/images/Basic Computer Knowledge eng and sw level ii.PNG" alt="Level 2 Book Cover" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; transition: transform 0.3s ease;">
+                        </div>
+                        <div style="padding: 0.8rem;">
+                            <div style="background: #F3E5F5; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.6rem;">
+                                <p style="margin: 0; color: #666; font-size: 0.8rem;"><strong>NQF Level:</strong> 3-4 (Advanced)</p>
+                                <p style="margin: 0.2rem 0 0 0; color: #666; font-size: 0.8rem;"><strong>Duration:</strong> 150 hrs</p>
+                                <p style="margin: 0.2rem 0 0 0; color: #666; font-size: 0.8rem;"><strong>Chapters:</strong> 20</p>
+                            </div>
+                            <h5 style="color: #C2185B; font-weight: 700; margin-bottom: 0.3rem; font-size: 0.9rem;">What You'll Learn:</h5>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 0.8rem;">
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Advanced Office & data analysis</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Database & business systems</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Programming basics</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Cybersecurity</li>
+                                <li style="padding: 0.15rem 0; color: #555; font-size: 0.75rem;">✓ Cloud & AI intro</li>
+                            </ul>
+                            <a href="chapters_level2.html" class="btn" style="background: #C2185B; color: white; padding: 6px 12px; border: none; border-radius: 6px; font-weight: 600; width: 100%; text-decoration: none; display: block; text-align: center; font-size: 0.8rem;">
+                                View Level 2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 1rem; border-radius: 12px; border-left: 5px solid #FFD700; text-align: center;">
+                <p style="margin: 0; color: #666; font-size: 0.9rem;">
+                    <strong>💡 Tip:</strong> Start with Level 1 then advance to Level 2. Both follow VETA & NACTVET standards.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Levels Section -->
+    <section id="chapters" style="padding: 80px 0; display: none;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: #1E40AF; font-weight: 700; margin-bottom: 1rem;">LEVEL 1 - 24 Comprehensive Chapters</h2>
+                <p style="font-size: 1.1rem; color: #666;">Foundation & Essential Skills</p>
+            </div>
+
+            <div class="row">
+                <!-- Chapter 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #24A148, #1E8449); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">💻</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 1</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Computer Fundamentals</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Understand computers, hardware, software, and how everything works together.</p>
+                            <a href="chapters/1.html" style="background: #24A148; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #24A148, #1E8449); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🔧</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 2</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Computer Components & Hardware</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Learn CPU, RAM, storage, input/output devices and system components.</p>
+                            <a href="chapters/2.html" style="background: #24A148; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #24A148, #1E8449); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🖥️</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 3</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Operating System Basics</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Master Windows desktop, taskbar, File Explorer and navigation.</p>
+                            <a href="chapters/3.html" style="background: #24A148; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #1E40AF, #1E3A8A); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">⚙️</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 4</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Setting Up Your Workspace</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Configure desktop, settings, programs and personalize your computer.</p>
+                            <a href="chapters/4.html" style="background: #1E40AF; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #FFD700, #FFA500); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🔌</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 5</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Starting & Shutting Down</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Learn proper startup, shutdown, sleep modes and power management.</p>
+                            <a href="chapters/5.html" style="background: #FFD700; color: #333; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #D946EF, #A855F7); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🖱️</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 6</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Using Mouse & Keyboard</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Master mouse controls, keyboard shortcuts, and typing techniques.</p>
+                            <a href="chapters/6.html" style="background: #D946EF; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 7 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #0EA5E9, #0284C7); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📁</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 7</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Files & Folders</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Organize files, create folders, copy, move, delete and search documents.</p>
+                            <a href="chapters/7.html" style="background: #0EA5E9; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 8 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #EC4899, #DB2777); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">💾</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 8</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Data Storage & Backup</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Understand storage types, backup strategies, cloud storage and recovery.</p>
+                            <a href="chapters/8.html" style="background: #EC4899; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 9 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #EF4444, #DC2626); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🔒</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 9</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Data Protection & Security</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Protect passwords, prevent malware, antivirus and secure data practices.</p>
+                            <a href="chapters/9.html" style="background: #EF4444; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 10 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📄</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 10</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Word Processing Intro</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Create, edit, format documents in Word, save and print professionally.</p>
+                            <a href="chapters/10.html" style="background: #8B5CF6; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 11 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #F59E0B, #D97706); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">✉️</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 11</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Email Fundamentals</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Send emails, attachments, organize inbox and email etiquette basics.</p>
+                            <a href="chapters/11.html" style="background: #F59E0B; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 12 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #06B6D4, #0891B2); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🌐</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 12</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Internet Basics</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Browse websites, search engines, connections and internet safety.</p>
+                            <a href="chapters/12.html" style="background: #06B6D4; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 13 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #14B8A6, #0D9488); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">✨</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 13</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Advanced Word Processing</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Master tables, styles, templates, headers, footers and mail merge.</p>
+                            <a href="chapters/13.html" style="background: #14B8A6; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 14 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #10B981, #059669); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📊</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 14</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Spreadsheet Basics</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Create spreadsheets, formulas, charts, sorting and basic analysis.</p>
+                            <a href="chapters/14.html" style="background: #10B981; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 15 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #F472B6, #EC4899); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🎨</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 15</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Presentation Skills</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Create slideshows, animations, transitions, and present effectively.</p>
+                            <a href="chapters/15.html" style="background: #F472B6; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 16 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #6366F1, #4F46E5); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🔗</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 16</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Internet Services</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Cloud services, online tools, web applications and digital resources.</p>
+                            <a href="chapters/16.html" style="background: #6366F1; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 17 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #84CC16, #65A30D); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📱</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 17</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Social Media & Digital Communication</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Use social platforms, messaging apps, video calls and digital etiquette.</p>
+                            <a href="chapters/17.html" style="background: #84CC16; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 18 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #EF4444, #991B1B); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">⚠️</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 18</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Online Safety & Cybersecurity</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Identify threats, phishing, malware, secure browsing and best practices.</p>
+                            <a href="chapters/18.html" style="background: #EF4444; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 19 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #3B82F6, #1D4ED8); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📋</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 19</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Project Planning</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Define goals, create timelines, plan resources and manage tasks.</p>
+                            <a href="chapters/19.html" style="background: #3B82F6; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 20 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #FB7185, #F43F5E); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">⚡</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 20</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Project Execution</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Execute tasks, monitor progress, solve problems and track resources.</p>
+                            <a href="chapters/20.html" style="background: #FB7185; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 21 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #22C55E, #16A34A); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">✅</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 21</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Project Evaluation & Reflection</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Assess results, gather feedback, learn from experience and improve.</p>
+                            <a href="chapters/21.html" style="background: #22C55E; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 22 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #9333EA, #7E22CE); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🚀</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 22</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Emerging Technologies</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">AI, cloud computing, IoT, blockchain and future technology trends.</p>
+                            <a href="chapters/22.html" style="background: #9333EA; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 23 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #DC2626, #991B1B); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🔧</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 23</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Troubleshooting & Maintenance</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Diagnose problems, regular maintenance, updates and performance optimization.</p>
+                            <a href="chapters/23.html" style="background: #DC2626; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 24 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                        <div style="background: linear-gradient(135deg, #FBBF24, #D97706); color: white; padding: 2rem; text-align: center; flex-shrink: 0;">
+                            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🏆</div>
+                            <h4 style="margin: 0; font-weight: 700;">Chapter 24</h4>
+                        </div>
+                        <div style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Capstone & Certification</h5>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">Final project, certification exam, career guidance and next steps.</p>
+                            <a href="chapters/24.html" style="background: #FBBF24; color: white; padding: 10px 20px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; display: block; transition: all 0.3s;">
+                                Start Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="padding: 80px 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: #1E40AF; font-weight: 700; margin-bottom: 1rem;">Why Choose This Course?</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">VETA Aligned</h5>
+                        <p style="color: #666;">Meets official Tanzania vocational training standards</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Bilingual</h5>
+                        <p style="color: #666;">Learn in English or Kiswahili</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🛠️</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Practical</h5>
+                        <p style="color: #666;">100+ hands-on exercises & real-world tasks</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Flexible</h5>
+                        <p style="color: #666;">Access on any device, anywhere, anytime</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Complete</h5>
+                        <p style="color: #666;">24 chapters covering all essential skills</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">👨‍🏫</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Teacher Ready</h5>
+                        <p style="color: #666;">Lesson plans & guides included</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Self-Paced</h5>
+                        <p style="color: #666;">Learn at your own speed, perfect for self-study</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+                        <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 0.8rem;">Assessments</h5>
+                        <p style="color: #666;">Track progress with built-in quizzes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #1F2937; color: white; padding: 3rem 0 1rem;">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4 mb-3">
+                    <h5 style="font-weight: 700; margin-bottom: 1rem;">🖥️ KNANA POWER LEARNING HUB</h5>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Professional vocational training for computer skills in Tanzania.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 style="font-weight: 700; margin-bottom: 1rem;">Quick Links</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#chapters" style="color: #93C5FD; text-decoration: none;">Chapters</a></li>
+                        <li><a href="#about" style="color: #93C5FD; text-decoration: none;">About</a></li>
+                        <li><a href="#" style="color: #93C5FD; text-decoration: none;">Teacher Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 style="font-weight: 700; margin-bottom: 1rem;">VETA/NACTVET</h5>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Aligned with Tanzania's official vocational training standards.</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem;">
+                <p>&copy; 2024-2026 KNANA POWER LEARNING HUB. Powered by <strong>The One Tech Services</strong>. All rights reserved. | <a href="index_sw.html" style="color: #93C5FD; text-decoration: none;">Kiswahili</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <script>
+        // Print functionality
+        document.getElementById('printBtn').addEventListener('click', function() {
+            window.print();
+        });
+
+        // PDF download functionality
+        document.getElementById('pdfBtn').addEventListener('click', function() {
+            const element = document.documentElement;
+            const opt = {
+                margin: [1, 1, 1, 1],
+                filename: 'Jifunze_Computer_Level1_Courses.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { orientation: 'portrait', unit: 'cm', format: 'a4' }
+            };
+            
+            // Show loading message
+            const originalText = this.textContent;
+            this.textContent = '📥 Generating...';
+            this.disabled = true;
+            
+            html2pdf().set(opt).from(element).save().then(() => {
+                this.textContent = originalText;
+                this.disabled = false;
+            }).catch(() => {
+                this.textContent = originalText;
+                this.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>

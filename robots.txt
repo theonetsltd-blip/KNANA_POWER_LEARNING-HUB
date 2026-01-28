@@ -1,0 +1,16 @@
+# Robots.txt for KNANA POWER LEARNING HUB
+# This file tells search engines how to crawl your website
+
+User-agent: *
+Allow: /
+Disallow: /downloads/answer-keys/
+Disallow: /downloads/worksheets/
+Disallow: /teacher-guide/
+Disallow: /*.js
+Disallow: /*.css
+
+# Sitemaps
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

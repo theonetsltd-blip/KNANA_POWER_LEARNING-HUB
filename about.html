@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KNANA POWER LEARNING HUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1E40AF;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1E40AF;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #24A148;
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        .value-card h5 {
+            color: #24A148;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+        .value-card p {
+            color: #555;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .leadership-card {
+            background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .leadership-card h5 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .leadership-card p {
+            margin: 0.3rem 0;
+            opacity: 0.9;
+        }
+        .leadership-card .title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background: #F3E5F5;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 5px solid #C2185B;
+        }
+        .highlight-box p {
+            color: #555;
+            margin: 0;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index_en.html" style="font-size: 1.4rem;">
+                🖥️ KNANA POWER LEARNING HUB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index_en.html#chapters">Start Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index_en.html#resources">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header style="background: linear-gradient(135deg, #0F172A 0%, #1E40AF 50%, #24A148 100%); color: white; padding: 50px 0; position: relative; overflow: hidden;">
+        <!-- Animated background elements -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,215,0,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
+        <div style="position: absolute; bottom: -100px; left: -100px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(36,161,72,0.1) 0%, transparent 70%); border-radius: 50%;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <div style="margin-bottom: 0.5rem;">
+                <span style="display: inline-block; background: #FFD700; color: #1E40AF; padding: 8px 16px; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">💡 ABOUT US</span>
+            </div>
+            <h1 style="font-size: 3rem; font-weight: 800; margin: 0.8rem 0; line-height: 1.15;">
+                Empowering <span style="color: #FFD700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Learners Worldwide</span>
+            </h1>
+            <p style="font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.6; opacity: 0.95; max-width: 600px;">
+                Transforming education through practical knowledge, cutting-edge technology, and vocational excellence for career advancement.
+            </p>
+            <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                <a href="index_en.html" class="btn" style="background-color: #FFD700; color: #0F172A; padding: 10px 20px; font-weight: 700; border: none; border-radius: 8px; font-size: 0.9rem; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3); transition: all 0.3s; cursor: pointer; text-decoration: none;">
+                    🏠 Go to Home
+                </a>
+                <a href="level1_chapters.html" class="btn" style="background-color: transparent; color: white; border: 2px solid white; padding: 8px 18px; font-weight: 600; border-radius: 8px; font-size: 0.9rem; transition: all 0.3s; text-decoration: none;">
+                    🚀 Start Learning
+                </a>
+            </div>
+            <!-- Quick Stats -->
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                <div>
+                    <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">2</div>
+                    <div style="font-size: 0.75rem; opacity: 0.9;">Levels</div>
+                </div>
+                <div>
+                    <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">44</div>
+                    <div style="font-size: 0.75rem; opacity: 0.9;">Chapters</div>
+                </div>
+                <div>
+                    <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">VETA</div>
+                    <div style="font-size: 0.75rem; opacity: 0.9;">Certified</div>
+                </div>
+                <div>
+                    <div style="font-size: 1.4rem; font-weight: 800; color: #FFD700;">100%</div>
+                    <div style="font-size: 0.75rem; opacity: 0.9;">Practical</div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+            }
+            @keyframes pulse {
+                0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.1; }
+                50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.2; }
+            }
+        </style>
+    </header>
+
+    <!-- Main Content -->
+    <div style="background: white; padding: 80px 0;">
+        <div class="container">
+
+            <!-- WHO WE ARE Section -->
+            <section style="margin-bottom: 4rem;">
+                <h2 class="section-title">WHO WE ARE</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 1.5rem;">
+                            KNANA POWER LEARNING HUB is a modern education and skills development platform dedicated to empowering individuals through practical knowledge, technology, and vocational skills. We focus on equipping learners with the competencies required to succeed in today's digital and professional world.
+                        </p>
+                        <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 1.5rem;">
+                            We believe that <strong>knowledge is power</strong>, and when learning is practical, accessible, and relevant, it becomes a strong foundation for personal growth, employment, and entrepreneurship.
+                        </p>
+                        <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+                            KNANA POWER LEARNING HUB is an educational initiative established by <strong>THE ONE TECH SERVICES</strong>, a technology-driven company specializing in digital solutions, training, and innovation.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div style="background: linear-gradient(135deg, #1E40AF, #24A148); color: white; padding: 2rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎓</div>
+                            <p style="margin: 0; font-size: 1.1rem; font-weight: 600;">Bridging Theory & Real-World Skills</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission & Vision Section -->
+            <section style="margin-bottom: 4rem;">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div style="background: #E8F5E9; padding: 2.5rem; border-radius: 12px; border-left: 5px solid #24A148; height: 100%;">
+                            <h3 style="color: #24A148; font-weight: 700; margin-bottom: 1.5rem; font-size: 1.4rem;">🎯 OUR MISSION</h3>
+                            <p style="color: #555; line-height: 1.8; margin: 0; font-size: 1.05rem;">
+                                To provide high-quality, practical, and accessible education that empowers learners with relevant skills, enhances employability, and supports lifelong learning in technology and vocational fields.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div style="background: #E3F2FD; padding: 2.5rem; border-radius: 12px; border-left: 5px solid #1E40AF; height: 100%;">
+                            <h3 style="color: #1E40AF; font-weight: 700; margin-bottom: 1.5rem; font-size: 1.4rem;">🚀 OUR VISION</h3>
+                            <p style="color: #555; line-height: 1.8; margin: 0; font-size: 1.05rem;">
+                                To become a leading learning hub for technology and vocational skills in Tanzania and Africa, producing skilled, confident, and innovative individuals ready for the future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What We Offer Section -->
+            <section style="margin-bottom: 4rem;">
+                <h2 class="section-title">WHAT WE OFFER</h2>
+                <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 2rem;">
+                    At KNANA POWER LEARNING HUB, we provide comprehensive programs designed to align with recognized curricula while responding to current industry and market needs:
+                </p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="value-card">
+                            <h5>💻 Basic Computer Knowledge & ICT Training</h5>
+                            <p>Foundation courses covering essential computer skills and information and communication technology basics.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="value-card">
+                            <h5>🏆 VETA-based Vocational & Technical Courses</h5>
+                            <p>Programs aligned with Tanzania's vocational education and training standards for professional development.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="value-card">
+                            <h5>🌐 Digital Skills & Technology Programs</h5>
+                            <p>Advanced courses covering contemporary digital tools, programming, and emerging technologies.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="value-card">
+                            <h5>✋ Hands-on, Competence-Based Learning</h5>
+                            <p>Practical, project-driven education that builds real-world skills and professional competence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="value-card">
+                            <h5>📱 Flexible Learning Options</h5>
+                            <p>Online and physical (in-person) learning opportunities to suit different learner preferences and schedules.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Approach Section -->
+            <section style="margin-bottom: 4rem;">
+                <h2 class="section-title">OUR LEARNING APPROACH</h2>
+                <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 2rem;">
+                    We adopt a learner-focused and practical approach that emphasizes real-world skill development:
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 1.5rem;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 1rem;">✓ Practical, Hands-on Training</h5>
+                            <p style="color: #555; margin: 0;">Direct experience with tools, software, and real-world scenarios.</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 1.5rem;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 1rem;">✓ Technology-Driven Learning</h5>
+                            <p style="color: #555; margin: 0;">Utilizing modern platforms, digital tools, and innovative teaching methods.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 1.5rem;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 1rem;">✓ Continuous Assessment & Development</h5>
+                            <p style="color: #555; margin: 0;">Regular feedback and progressive skill building for measurable progress.</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 1.5rem;">
+                            <h5 style="color: #1E40AF; font-weight: 700; margin-bottom: 1rem;">✓ Real-World Problem-Solving</h5>
+                            <p style="color: #555; margin: 0;">Tackling actual challenges to develop critical thinking and practical expertise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-box" style="border-left-color: #24A148;">
+                    <h5 style="color: #24A148; font-weight: 700; margin-bottom: 1rem;">Our Goal</h5>
+                    <p>Our goal is not just to teach, but to build <strong>confidence, competence, and independence</strong> in every learner.</p>
+                </div>
+            </section>
+
+            <!-- Core Values Section -->
+            <section style="margin-bottom: 4rem;">
+                <h2 class="section-title">OUR CORE VALUES</h2>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="value-card" style="border-left-color: #FFD700;">
+                            <h5 style="color: #FFD700;">💡 Knowledge Is Power</h5>
+                            <p>Education is the key to opportunity and personal transformation.</p>
+                        </div>
+                        <div class="value-card" style="border-left-color: #24A148;">
+                            <h5 style="color: #24A148;">⭐ Excellence</h5>
+                            <p>We strive for quality in everything we do, from course design to learner support.</p>
+                        </div>
+                        <div class="value-card" style="border-left-color: #1E40AF;">
+                            <h5 style="color: #1E40AF;">✓ Integrity</h5>
+                            <p>Honest, ethical, and responsible learning practices and business conduct.</p>
+                        </div>
+                        <div class="value-card" style="border-left-color: #9333EA;">
+                            <h5 style="color: #9333EA;">🚀 Innovation</h5>
+                            <p>Embracing technology, creativity, and forward-thinking educational approaches.</p>
+                        </div>
+                        <div class="value-card" style="border-left-color: #C2185B;">
+                            <h5 style="color: #C2185B;">🤝 Empowerment</h5>
+                            <p>Building skills for self-reliance, confidence, and independence in learners.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leadership Section -->
+            <section style="margin-bottom: 4rem;">
+                <h2 class="section-title">LEADERSHIP</h2>
+                <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 3rem; text-align: center;">
+                    KNANA POWER LEARNING HUB is led by passionate professionals with strong backgrounds in technology, education, and innovation.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="leadership-card">
+                            <div style="font-size: 3.5rem; margin-bottom: 1rem;">👨‍💼</div>
+                            <h5>Mr. Shadrack Raphael Lukoa</h5>
+                            <p class="title">Founder & Chief Executive Officer (CEO)</p>
+                            <p style="font-size: 0.95rem; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 1rem;">
+                                THE ONE TECH SERVICES
+                            </p>
+                            <p style="margin-top: 1rem; font-size: 0.95rem;">
+                                With a strong background in technology, education, and innovation, the leadership is committed to delivering impactful learning experiences and driving digital empowerment across Tanzania and Africa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section style="background: linear-gradient(135deg, #1E40AF 0%, #24A148 100%); color: white; padding: 4rem 2rem; border-radius: 12px; text-align: center; margin-top: 4rem;">
+                <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Join Our Learning Community</h2>
+                <p style="font-size: 1.1rem; opacity: 0.95; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Start your journey to skill development and professional growth today. Explore our programs and discover the opportunities waiting for you.
+                </p>
+                <a href="index_en.html" style="background: #FFD700; color: #1E40AF; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+                    Explore Our Courses
+                </a>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #1F2937; color: white; padding: 3rem 0 1rem;">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4 mb-3">
+                    <h5 style="font-weight: 700; margin-bottom: 1rem;">🖥️ KNANA POWER LEARNING HUB</h5>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Professional vocational training and digital skills development for the future.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 style="font-weight: 700; margin-bottom: 1rem;">Quick Links</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="about.html" style="color: #93C5FD; text-decoration: none;">About</a></li>
+                        <li><a href="chapters_level1.html" style="color: #93C5FD; text-decoration: none;">Level 1 Chapters</a></li>
+                        <li><a href="chapters_level2.html" style="color: #93C5FD; text-decoration: none;">Level 2 Chapters</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 style="font-weight: 700; margin-bottom: 1rem;">VETA/NACTVET</h5>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Aligned with Tanzania's official vocational training standards.</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem; text-align: center; opacity: 0.7; font-size: 0.9rem;">
+                <p>&copy; 2024-2026 KNANA POWER LEARNING HUB. Powered by <strong>The One Tech Services</strong>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

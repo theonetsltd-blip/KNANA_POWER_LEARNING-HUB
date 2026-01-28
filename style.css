@@ -1,0 +1,111 @@
+/*
+    Color Palette (Inspired by Tanzanian Flag)
+    - Blue: #1C87C9
+    - Green: #24A148
+    - Yellow: #FDD835
+    - Black: #212529 (Bootstrap's default dark color for text)
+    - Off-white background for content: #f8f9fa
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #24A148 !important; /* Green */
+}
+
+.navbar {
+    border-bottom: 3px solid #FDD835; /* Yellow */
+}
+
+.lang-selector a {
+    color: #1C87C9; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lang-selector .active {
+    text-decoration: underline;
+}
+
+.hero-section {
+    background-color: #1C87C9; /* Blue */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.levels-section {
+    padding: 50px 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #1C87C9; /* Blue */
+    font-weight: bold;
+}
+
+.card-header {
+    background-color: #24A148; /* Green */
+    color: white;
+    font-weight: bold;
+}
+
+.list-group-item {
+    border: 1px solid #dee2e6;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e8f4f8;
+    border-color: #1C87C9;
+    transform: translateX(5px);
+}
+
+.list-group-item strong {
+    color: #1C87C9; /* Blue */
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .list-group-item {
+        padding: 12px 15px;
+    }
+}
